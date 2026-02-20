@@ -4,11 +4,22 @@ A calm, repeatable workflow for deploying articles from this repository to [arti
 
 ---
 
-## Approach: Simple Static Markdown
+## Repository Structure
 
-This site does **not** use a static site generator, build pipeline, or JavaScript framework. GitHub Pages renders a repository as a simple file host. Articles are linked directly as Markdown files. This keeps the workflow deterministic and the tooling surface near zero.
+This repository has a clear separation between two concerns:
 
-If Markdown rendering in the browser becomes a meaningful friction point for readers, a minimal Jekyll setup (GitHub Pages' native engine, zero configuration required) is the justified next step — but only then.
+| Directory | Purpose |
+|-----------|---------|
+| `articles/` | Canonical writing system — Markdown source files, drafts, and archives |
+| `site/` | Presentation layer — static HTML/CSS served by GitHub Pages |
+
+Content in `articles/` is the authoritative source of truth. The `site/` directory is a thin presentation layer only: it contains `index.html`, `style.css`, and the `CNAME` file. It does **not** contain a static site generator, build pipeline, or JavaScript framework.
+
+---
+
+## Approach: Simple Static HTML
+
+The site is pure HTML and CSS. No Jekyll. No build step. No JavaScript. GitHub Pages serves the `site/` directory directly. Articles are linked as Markdown files hosted at their canonical paths in the repository.
 
 ---
 
@@ -17,18 +28,26 @@ If Markdown rendering in the browser becomes a meaningful friction point for rea
 1. Open the repository on GitHub: `github.com/egohygiene/articles`.
 2. Go to **Settings → Pages**.
 3. Under **Source**, select **Deploy from a branch**.
-4. Set the branch to `main` and the folder to `/ (root)`.
+4. Set the branch to `main` and the folder to `/site`.
 5. Click **Save**.
 
-GitHub Pages will now serve the repository root at `https://egohygiene.github.io/articles/`.
+GitHub Pages will now serve the `site/` directory at `https://egohygiene.github.io/articles/`.
 
 ---
 
 ## 2. Add the CNAME File
 
-A `CNAME` file at the repository root tells GitHub Pages which custom domain to respond to.
+A `CNAME` file inside `site/` tells GitHub Pages which custom domain to respond to.
 
-1. Create a file named `CNAME` in the repository root (no extension).
+The file `site/CNAME` already exists in this repository and contains:
+
+```
+articles.egohygiene.io
+```
+
+If it ever needs to be recreated:
+
+1. Create `site/CNAME` (no extension).
 2. The file must contain exactly one line — the custom domain:
 
    ```
@@ -38,7 +57,7 @@ A `CNAME` file at the repository root tells GitHub Pages which custom domain to 
 3. Commit and push:
 
    ```
-   git add CNAME
+   git add site/CNAME
    git commit -m "chore: add CNAME for GitHub Pages custom domain"
    git push
    ```
@@ -164,9 +183,10 @@ If an article is retired:
 Use this before and after each website publish:
 
 - [ ] `published.md` is final and pushed to `main`
-- [ ] `CNAME` file is present in the repository root
+- [ ] `site/CNAME` file is present and contains `articles.egohygiene.io`
+- [ ] `site/index.html` links to the new article
 - [ ] DNS CNAME record is set for `articles.egohygiene.io`
-- [ ] GitHub Pages is enabled with `main` branch as source
+- [ ] GitHub Pages is enabled with `main` branch, `/site` folder as source
 - [ ] HTTPS is enforced in GitHub Pages settings
 - [ ] Article is accessible at `https://articles.egohygiene.io/articles/YYYY-MM-slug/published.md`
 - [ ] `canonical.txt` created in article folder and committed
