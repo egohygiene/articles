@@ -25,12 +25,46 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Sync canonical articles into site directory
+      - name: Prepare site directory
         run: |
-          echo "Syncing articles into site/"
+          echo "Cleaning site directory"
           rm -rf site/articles
           mkdir -p site/articles
+
+      - name: Sync canonical articles into site
+        run: |
+          echo "Copying articles into site"
           cp -r articles/* site/articles/
+
+      - name: Regenerate index.html article list
+        run: |
+          echo "Generating article list"
+
+          LIST_FILE="site/generated-list.html"
+          > $LIST_FILE
+
+          for dir in site/articles/*/ ; do
+            SLUG=$(basename "$dir")
+            TITLE=$(grep -m 1 "^# " "$dir/published.md" | sed 's/^# //')
+
+            echo "    <li><a href=\"/articles/$SLUG/published.md\">$TITLE</a></li>" >> $LIST_FILE
+          done
+
+          awk '
+          BEGIN {inserted=0}
+          /<!-- AUTO-GENERATED-LIST -->/ {
+            print
+            while ((getline line < "site/generated-list.html") > 0) print line
+            inserted=1
+            next
+          }
+          { print }
+          END {
+            if (!inserted) {
+              print "ERROR: AUTO-GENERATED-LIST marker not found"
+              exit 1
+            }
+          }' site/index.html > site/index.tmp && mv site/index.tmp site/index.html
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
