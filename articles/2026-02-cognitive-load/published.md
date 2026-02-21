@@ -1,6 +1,6 @@
 # Cognitive Load Is the Missing Layer in Developer Experience
 
-![Cognitive load illustration](assets/header-cognitive-load-overwhelm.png)
+![](assets/header-cognitive-load-overwhelm.png)
 
 ---
 
