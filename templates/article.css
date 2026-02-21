@@ -1,0 +1,144 @@
+:root {
+  --bg: #fafaf8;
+  --text: #1c1c1a;
+  --muted: #6b6b68;
+  --accent: #3a5a4a;
+  --border: #ddddd8;
+  --max-width: 720px;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem 4rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.article-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Header */
+.article-header {
+  margin-bottom: 2.5rem;
+}
+
+.article-header h1 {
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* Article content */
+.article-content {
+  font-size: 1rem;
+}
+
+.article-content h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.article-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.article-content p {
+  margin: 1rem 0;
+}
+
+.article-content ul,
+.article-content ol {
+  margin: 1rem 0 1rem 1.25rem;
+}
+
+.article-content li {
+  margin: 0.5rem 0;
+}
+
+/* Links */
+.article-content a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.article-content a:hover {
+  text-decoration: underline;
+}
+
+/* Images */
+.article-content img {
+  display: block;
+  max-width: 100%;
+  margin: 2rem auto 0.5rem;
+}
+
+/* Figure captions (uses adjacent paragraph italic style) */
+.article-content img + em,
+.article-content img + p em {
+  display: block;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+/* Horizontal rules */
+.article-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 3rem 0;
+}
+
+/* Footer */
+.article-footer {
+  margin-top: 4rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.article-footer hr {
+  margin-bottom: 1.5rem;
+}
+
+/* Anchor offset for section IDs */
+.article-content h2[id],
+.article-content h3[id] {
+  scroll-margin-top: 4rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .article-header h1 {
+    font-size: 1.6rem;
+  }
+}
