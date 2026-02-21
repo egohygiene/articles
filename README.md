@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://via.placeholder.com/240x240.png?text=Ego+Hygiene" alt="Ego Hygiene Logo" width="180">
+  <img src="assets/logo.png" alt="Ego Hygiene Logo" width="180">
 </p>
 
 <h1 align="center">Ego Hygiene — Articles</h1>
