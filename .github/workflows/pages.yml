@@ -25,29 +25,56 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install Pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
+
       - name: Prepare site directory
         run: |
-          echo "Cleaning site directory"
           rm -rf site/articles
           mkdir -p site/articles
 
-      - name: Sync canonical articles into site
+      - name: Build articles into HTML
         run: |
-          echo "Copying articles into site"
-          cp -r articles/* site/articles/
+          for dir in articles/*/ ; do
+            SLUG=$(basename "$dir")
+            mkdir -p site/articles/$SLUG
 
-      - name: Regenerate index.html article list
+            # Extract title (first H1)
+            TITLE=$(grep -m 1 "^# " "$dir/published.md" | sed 's/^# //')
+
+            # Convert Markdown to HTML fragment
+            pandoc "$dir/published.md" \
+              --from markdown \
+              --to html \
+              --output site/articles/$SLUG/content.html
+
+            # Inject into template
+            sed "s/{{TITLE}}/$TITLE/g" templates/article-template.html \
+              | sed "/{{CONTENT}}/{
+                  r site/articles/$SLUG/content.html
+                  d
+                }" \
+              > site/articles/$SLUG/article.html
+
+            # Copy assets if present
+            if [ -d "$dir/assets" ]; then
+              cp -r "$dir/assets" site/articles/$SLUG/
+            fi
+          done
+
+      - name: Copy article CSS
         run: |
-          echo "Generating article list"
+          cp templates/article.css site/article.css
 
+      - name: Regenerate index.html list
+        run: |
           LIST_FILE="site/generated-list.html"
           > $LIST_FILE
 
           for dir in site/articles/*/ ; do
             SLUG=$(basename "$dir")
-            TITLE=$(grep -m 1 "^# " "$dir/published.md" | sed 's/^# //')
-
-            echo "    <li><a href=\"/articles/$SLUG/published.md\">$TITLE</a></li>" >> $LIST_FILE
+            TITLE=$(grep -m 1 "<h1>" "$dir/article.html" | sed 's/<[^>]*>//g')
+            echo "    <li><a href=\"/articles/$SLUG/article.html\">$TITLE</a></li>" >> $LIST_FILE
           done
 
           awk '
