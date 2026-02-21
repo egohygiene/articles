@@ -98,7 +98,33 @@ Burnout research consistently shows that sustained overload leads to disengageme
 
 ## References
 
-See `references.md` in this article folder for full citations and verification links.
+Sweller, J. (1988).  
+*Cognitive load during problem solving: Effects on learning.*  
+Cognitive Science, 12(2), 257–285.  
+https://doi.org/10.1207/s15516709cog1202_4
+
+Miller, G. A. (1956).  
+*The magical number seven, plus or minus two: Some limits on our capacity for processing information.*  
+Psychological Review, 63(2), 81–97.  
+https://doi.org/10.1037/h0043158
+
+Mark, G., Gudith, D., & Klocke, U. (2008).  
+*The cost of interrupted work: More speed and stress.*  
+Proceedings of the SIGCHI Conference on Human Factors in Computing Systems.  
+https://doi.org/10.1145/1357054.1357072
+
+Barkley, R. A. (2012).  
+*Executive Functions: What They Are, How They Work, and Why They Evolved.*  
+Guilford Press.
+
+Maslach, C., & Leiter, M. P. (2016).  
+*Understanding the burnout experience: Recent research and its implications for psychiatry.*  
+World Psychiatry, 15(2), 103–111.  
+https://doi.org/10.1002/wps.20311
+
+Forsgren, N., Humble, J., & Kim, G. (2018).  
+*Accelerate: The Science of Lean Software and DevOps.*  
+IT Revolution Press.
 
 ---
 
