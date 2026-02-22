@@ -1,6 +1,6 @@
 # Cognitive Load Is the Missing Layer in Developer Experience
 
-![](assets/header-cognitive-load-overwhelm.png)
+![](assets/header.png)
 
 ---
 
@@ -42,7 +42,7 @@ Sweller distinguishes between three types of load:
 
 Intrinsic and extraneous load draw from the same finite pool. When extraneous load is high, less capacity remains for productive thinking and learning.
 
-![Figure 1 — Cognitive Load Model](assets/figure-1-cognitive-load-model.png)
+![Figure 1 — Cognitive Load Model](assets/figure1.png)
 
 *Working memory is a fixed resource. Reducing extraneous load increases the space available for productive cognitive work.*
 
