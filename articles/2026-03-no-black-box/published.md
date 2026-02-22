@@ -8,12 +8,13 @@
 
 In conversations about artificial intelligence, one phrase appears repeatedly: *black box*.
 
-The term carries weight. It suggests opacity, unknowability, and a loss of control. It implies that something essential is happening inside the system that no one can meaningfully understand.
+It carries a quiet accusation.  
+Opacity. Unknowability. Loss of control.
 
 But engineers work with black boxes every day.
 
-The question is not whether black boxes exist.  
-The question is whether we understand what a black box actually is.
+The real question is not whether black boxes exist.  
+It’s whether we understand what a black box actually is.
 
 ---
 
@@ -21,10 +22,10 @@ The question is whether we understand what a black box actually is.
 
 Software engineering depends on abstraction.
 
-Functions encapsulate logic.  
-APIs encapsulate systems.  
-Modules encapsulate state.  
-Libraries encapsulate entire domains of complexity.
+Functions hide implementation.  
+APIs hide systems.  
+Modules hide internal state.  
+Libraries hide entire domains of complexity.
 
 From the outside, these are black boxes.
 
@@ -32,31 +33,34 @@ From the inside, they are simply another level of zoom.
 
 Encapsulation is not a flaw in engineering — it is how we survive complexity under cognitive limits.
 
----
+Cognitive Load Theory shows that working memory is limited. We cannot hold every internal detail of every system simultaneously. Abstraction allows us to compress complexity into manageable units.
 
-## Perspective Is Relative
-
-No engineer sees the entire system at once.
-
-Zoom in far enough and a function becomes readable.  
-Zoom out far enough and that same function collapses into a single conceptual node.
-
-There is no absolute vantage point from which the entire graph is visible simultaneously.
-
-What appears opaque from one perspective becomes legible from another.
-
-![Figure 1 — Zoom-Level Abstraction Model](assets/figure1.png)
-
-*Black boxes are often boundaries between levels of abstraction, not barriers to understanding.*
-
-The “black box” is not a metaphysical object.  
+The black box is not ignorance.  
 It is a boundary.
 
 ---
 
-## AI as Amplified Abstraction
+## Zoom Is Relative
 
-AI systems feel different because of scale.
+No engineer ever sees the entire system at once.
+
+Zoom out, and complex structures collapse into single blocks.  
+Zoom in, and those blocks unfold into submodules.  
+Zoom in further, and those submodules become interconnected components.
+
+![Figure 1 — Zoom-Level Abstraction Model](assets/figure1.png)
+
+What appears opaque from one perspective becomes legible from another.
+
+There is no absolute vantage point from which the entire graph is visible simultaneously.
+
+What we call a “black box” is often just a boundary between levels of abstraction.
+
+---
+
+## AI as Scaled Encapsulation
+
+AI feels different because of scale.
 
 Neural networks compress vast statistical relationships into weight matrices. Latent spaces represent high-dimensional structures that cannot be intuitively visualized.
 
@@ -69,49 +73,59 @@ They are still:
 - Optimization processes  
 - Encapsulated abstractions  
 
-The abstraction layer is simply larger.
+The abstraction layer is simply larger than what most engineers are used to navigating.
 
 What feels unknowable is often just outside your current zoom level.
 
----
+![Figure 2 — Compression and Verification Loop](assets/figure2.png)
 
-## Gist Thinking and Compression
+The pattern remains the same.
 
-Humans do not operate on raw detail. We operate on compressed meaning.
-
-Cognitive Load Theory shows that working memory is limited. When systems grow large, we rely on abstraction — or what might be called *gist thinking* — to move forward.
-
-We extract structural meaning without holding every internal detail at once.
-
-Expert engineers do this constantly.
-
-The risk is not abstraction itself.
-
-The risk is compression without return.
-
-Abstraction must be followed by verification.
+Compression enables movement.  
+Verification restores grounding.
 
 AI accelerates compression.  
-It does not eliminate the need for grounding.
+It does not eliminate the responsibility to zoom back in.
 
 ---
 
-## Creative Practice and AI
+## Compression Without Return
 
-In creative work, AI functions as an abstraction amplifier.
+Humans naturally think in compressed representations — or *gist*.
 
-It can generate variation quickly.  
-It can surface patterns.  
-It can expand a design space at speed.
+We extract structural meaning without holding every implementation detail in mind. Expert engineers rely on this constantly.
+
+The problem is not abstraction.
+
+The problem is abstraction without return.
+
+Compression without verification creates drift.  
+Abstraction without grounding creates instability.
+
+AI increases the speed and scale of abstraction.  
+It increases — not decreases — the need for deliberate verification.
+
+---
+
+## Creative Work and Amplified Graphs
+
+In creative practice, AI functions as an abstraction amplifier.
+
+It expands the graph you can traverse.  
+It increases the number of encapsulated clusters you can explore.
 
 But vision still belongs to the human.
 
 Writing anchors abstraction.  
-Story provides direction.  
+Story constrains exploration.  
 Intent determines evaluation.
 
-AI may assist in navigating the space.  
-It does not determine where to go.
+AI can amplify structure.  
+It cannot replace perspective.
+
+![Figure 3 — Abstraction Amplification Model](assets/figure3.png)
+
+The human remains the navigator.
 
 ---
 
@@ -119,20 +133,21 @@ It does not determine where to go.
 
 The danger is not that AI is a black box.
 
-The danger is forgetting to zoom back in.
-
-When we rely exclusively on encapsulated outputs without inspecting assumptions, we lose calibration.
-
-That loss is not technological.  
-It is cognitive.
+The danger is forgetting that zoom is possible.
 
 Engineering has always required oscillation:
 
 Zoom out to design.  
 Zoom in to verify.
 
-AI increases the speed of abstraction.  
-It increases — not decreases — the responsibility to return to detail.
+AI does not redefine this pattern.  
+It simply scales it.
+
+There is no true black box — only boundaries we have not crossed.
+
+What matters is not eliminating abstraction.
+
+What matters is remembering that responsibility exists at every level of it.
 
 ---
 
@@ -166,16 +181,4 @@ https://doi.org/10.1002/wps.20311
 Simon, H. A. (1956).  
 *Rational choice and the structure of the environment.*  
 Psychological Review, 63(2), 129–138.  
-https://doi.org/10.1037/h0042769  
-
----
-
-## Closing Reflection
-
-There is no true black box — only boundaries we have not crossed.
-
-Engineering has always depended on abstraction. AI extends that pattern, but it does not redefine it.
-
-What matters is not whether systems contain hidden layers.
-
-What matters is whether we remember that zoom is possible — and that responsibility lives at every level.
+https://doi.org/10.1037/h0042769
