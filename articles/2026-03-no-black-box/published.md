@@ -107,6 +107,20 @@ It increases — not decreases — the need for deliberate verification.
 
 ---
 
+### Cognitive Oscillation
+
+| Mode | Cognitive System | Psychological Experience | Strength | Risk if Isolated |
+|------|------------------|--------------------------|----------|------------------|
+| Compression (Gist) | Fast pattern recognition | Clarity, momentum, intuitive confidence | Speed and movement | Drift, overconfidence |
+| Verification (Detail) | Deliberate analytical reasoning | Stability, certainty, grounded understanding | Accuracy and calibration | Paralysis, overanalysis |
+| Oscillation (Healthy Loop) | Intentional switching between modes | Coherence and trust in one’s models | Sustainable reasoning | Requires discipline |
+
+Abstraction is not the problem. Staying in one mode too long is.
+
+Engineering has always depended on this oscillation — zoom out to design, zoom in to verify. AI increases the scale of compression, which makes deliberate return to detail even more important.
+
+---
+
 ## Creative Work and Amplified Graphs
 
 In creative practice, AI functions as an abstraction amplifier.
