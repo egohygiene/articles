@@ -1,103 +1,83 @@
-# Visuals — Guidelines
+# Visual System — Standards
 
-Standards for creating, selecting, and integrating visual elements into articles in this repository.
+Visuals clarify structure.
 
----
-
-## Purpose
-
-Visuals should clarify an idea that prose alone cannot convey efficiently. They are not decoration. This guide defines when to include a visual, what types are acceptable, and how to produce them.
+They are not decoration.
+They are not aesthetic padding.
+They must reduce cognitive load.
 
 ---
 
 ## When to Include a Visual
 
-Include a visual only when at least one of the following is true:
+Include only if:
 
-- A relationship or structure is easier to grasp in diagram form than in prose.
-- A process has multiple steps that benefit from visual sequencing.
-- A comparison between two or more states is central to the argument.
+- A structural relationship benefits from spatial representation
+- A loop or oscillation needs clarification
+- A comparison is central to the argument
+- A layered abstraction benefits from visual compression
 
-Do not include a visual:
-- Because the template has a placeholder for one.
-- To add visual interest without adding conceptual clarity.
-- As a substitute for a clear written explanation.
+Maximum:
+- 1 header
+- 2–3 supporting figures
 
-Each article should have at most one primary visual. A second visual is acceptable if it addresses a genuinely distinct concept.
-
----
-
-## Accepted Visual Types
-
-| Type | Use case |
-|------|----------|
-| Conceptual diagram | Relationships between ideas, systems, or forces |
-| Process flow | Sequential steps or phases |
-| Comparison table | Side-by-side differences between two or more states |
-| Annotated illustration | A single subject with labeled components |
-
-Avoid:
-- Charts or graphs built on data from this repository (not a data publication)
-- Stock photography
-- Decorative icons or emojis used as visual elements
-- Screenshots (unless documenting a specific interface)
+More than 4 visuals requires justification.
 
 ---
 
-## Visual Tone
+## Visual Philosophy
 
-Visuals must match the overall tone of the article: calm, analytical, and functional.
+Visuals must:
 
-- **Prefer minimal style.** Clean lines, neutral palette, high contrast.
-- **Avoid visual noise.** No drop shadows, gradients, or decorative frames unless they carry meaning.
-- **Label clearly.** Every element in a diagram must be labeled in plain language. No unexplained abbreviations.
-- **Use consistent typography.** Labels should use the same typeface and weight throughout a single visual.
+- Be minimal
+- Use consistent palette
+- Avoid visual noise
+- Avoid decorative gradients unless meaningful
+- Match article tone (calm, analytical)
 
----
-
-## File Format and Naming
-
-- Save all visual assets in `articles/YYYY-MM-slug/assets/`.
-- Use lowercase, hyphen-separated filenames: `cognitive-load-model.png`.
-- Prefer `.png` for diagrams and `.svg` for vector graphics when available.
-- Do not embed images inline in the Markdown source as base64.
+No stock photography.
+No emoji graphics.
+No ornamental fluff.
 
 ---
 
-## Alt Text Requirements
+## Naming Convention
 
-Every visual included in an article must have descriptive alt text.
+Use canonical filenames:
 
-- Alt text must describe what the visual shows, not just its title.
-- It should be understandable to someone who cannot see the image.
-- Keep it under 125 characters where possible.
+    header.png
+    figure1.png
+    figure2.png
+    figure3.png
 
-Example:
+All stored in:
 
-```markdown
-![Diagram showing intrinsic and extraneous cognitive load as two stacked bars within a fixed working memory capacity](../assets/cognitive-load-model.png)
-```
+    articles/YYYY-MM-slug/assets/
 
----
-
-## Caption Convention
-
-Include a caption below every visual using an HTML comment in the source Markdown:
-
-```markdown
-<!-- Caption: Brief description of what the visual shows and why it is included. -->
-```
-
-The caption should add context that the alt text does not provide — for example, connecting the visual to the argument in the article.
+No creative filenames.
+No embedded base64 images.
 
 ---
 
-## Producing Visuals
+## Alt Text Rule
 
-Diagrams may be produced using any tool that outputs clean, accessible images. Recommended approaches:
+Every image must include:
 
-- **Diagrams.net (draw.io)** — Free, exports clean SVG and PNG, no account required.
-- **Excalidraw** — Sketch-style diagrams with clean minimal output.
-- **Mermaid** — Code-defined diagrams for flowcharts and sequences; renders in GitHub Markdown natively.
+- Descriptive alt text (what it shows)
+- Caption (why it matters)
 
-If using Mermaid, include the source code block in the draft file and note that a rendered image must be exported before publication.
+Alt text = description.
+Caption = interpretation.
+
+---
+
+## Design Discipline
+
+A good visual:
+
+- Clarifies a concept instantly
+- Does not require reading to decode
+- Does not introduce new conceptual branches
+- Reinforces a structural pillar
+
+If a visual feels decorative, remove it.
