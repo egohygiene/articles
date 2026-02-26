@@ -6,7 +6,7 @@ on:
       - main
       - master
     paths:
-      - 'articles/**'
+      - 'articles/**/published.md'
       - 'templates/**'
       - 'site/index.html'
       - '.github/workflows/pages.yml'
@@ -33,21 +33,33 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Pandoc
-        run: sudo apt-get update && sudo apt-get install -y pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes pandoc
 
       - name: Prepare site directory
         run: |
           rm -rf site/articles
           mkdir -p site/articles
 
-      - name: Build articles into HTML
+      - name: Build published articles into HTML
         run: |
+          set -e
+
           for dir in articles/*/ ; do
             SLUG=$(basename "$dir")
+
+            if [ ! -f "$dir/published.md" ]; then
+              echo "Skipping $SLUG (no published.md)"
+              continue
+            fi
+
+            echo "Building article: $SLUG"
+
             mkdir -p site/articles/$SLUG
 
-            # Extract title (first H1)
-            TITLE=$(grep -m 1 "^# " "$dir/published.md" | sed 's/^# //')
+            # Extract first H1 as title (safe fallback if missing)
+            TITLE=$(grep -m 1 "^# " "$dir/published.md" | sed 's/^# //' || echo "$SLUG")
 
             # Convert Markdown to HTML fragment
             pandoc "$dir/published.md" \
@@ -76,12 +88,15 @@ jobs:
       - name: Regenerate index.html list
         run: |
           LIST_FILE="site/generated-list.html"
-          > $LIST_FILE
+          > "$LIST_FILE"
 
           for dir in site/articles/*/ ; do
+            [ -f "$dir/article.html" ] || continue
+
             SLUG=$(basename "$dir")
             TITLE=$(grep -m 1 "<h1>" "$dir/article.html" | sed 's/<[^>]*>//g')
-            echo "    <li><a href=\"/articles/$SLUG/article.html\">$TITLE</a></li>" >> $LIST_FILE
+
+            echo "    <li><a href=\"/articles/$SLUG/article.html\">$TITLE</a></li>" >> "$LIST_FILE"
           done
 
           awk '
