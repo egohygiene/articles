@@ -68,7 +68,7 @@ The paradox exists because each perspective reveals something real while hiding 
 
 ![Figure 1](assets/figure1.png)
 
-*Different perspectives can produce models that appear contradictory even when they describe the same underlying system.*
+*Contradictions often arise when different perspectives describe the same system. Each view is internally consistent, but none captures the full structure alone.*
 
 ---
 
@@ -112,7 +112,7 @@ It is defending identity.
 
 ![Figure 2](assets/figure2.png)
 
-*When beliefs fuse with identity, contradictions feel like threats. Separating identity from belief restores flexibility.*
+*When beliefs fuse with identity, disagreement feels like a personal threat. Separating identity from belief allows ideas to evolve without destabilizing the self.*
 
 ---
 
@@ -167,7 +167,7 @@ Stability without rigidity.
 
 ![Figure 3](assets/figure3.png)
 
-*Truth-seeking is not rigid certainty or total collapse. It is the adaptive balance that emerges between them.*
+*Complex systems are often best understood through multiple models. Stability emerges when different perspectives are held together rather than forced into a single view.*
 
 ---
 
