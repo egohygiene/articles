@@ -1,82 +1,166 @@
-# THESIS.md
+# Cognitive Work Has Recovery Limits
 
-## Working Title
-Cognitive Work Has Recovery Limits
+*Why high-cognitive professions quietly exceed human recovery capacity.*
 
 ---
 
 ## Core Thesis
 
-Modern knowledge work often treats thinking as if it were frictionless.
-
-But cognition is not separate from the body. It is supported by biological systems that operate within constraints — energy use, neural signaling, and stress regulation.
-
-These constraints are usually invisible during short periods of effort. But when cognitive work is sustained and concentrated over time, limits begin to appear.
-
-Performance becomes less stable. Clarity fluctuates. Effort increases while output decreases.
-
-Because these limits are rarely framed as biological, they are often interpreted as personal shortcomings rather than system behavior.
-
-This article explores cognitive work as a constrained system, and examines what happens when recovery is not structurally accounted for.
+High-cognitive professions such as software engineering concentrate sustained abstract reasoning into long periods of intense mental effort. Because this work is largely invisible and culturally framed as “just thinking,” its biological cost is often underestimated. When recovery loops—sleep, cognitive rest, emotional processing, and physical regulation—are insufficient, the result can be cognitive overload that masquerades as underperformance or loss of ability. Recognizing the recovery limits of cognitive work is essential not only for individual wellbeing but also for designing healthier and more resilient engineering systems.
 
 ---
 
 ## Structural Pillars
 
-### Pillar 1 — Thinking as a Biological Process
-Cognition depends on physical systems. Mental effort is supported by energy, signaling, and regulation mechanisms that are subject to fatigue.
+### 1. Cognitive Work Is Biological Work
+
+Thinking is not frictionless.
+
+Key ideas:
+
+- the brain is metabolically expensive  
+- sustained reasoning consumes energy  
+- stress hormones affect cognition  
+- cognitive fatigue is physiological, not psychological weakness  
+
+Goal of this section:
+
+Explain that **thinking has physical cost**.
 
 ---
 
-### Pillar 2 — Concentration of Cognitive Demand
-Certain forms of work compress attention, memory, and reasoning into sustained periods of focus, increasing total system load.
+### 2. Engineering Concentrates Cognitive Load
+
+Explain what makes engineering unusual.
+
+Key dynamics:
+
+- sustained abstract reasoning  
+- debugging and mental simulation  
+- working memory strain  
+- long attention windows  
+
+Important tone constraint:
+
+Do **not** claim engineering is “harder than other jobs.”
+
+Instead:
+
+Engineering **concentrates cognitive load in unusual ways**.
 
 ---
 
-### Pillar 3 — Absence of Recovery Structure
-Unlike physical systems, cognitive work is rarely designed with explicit recovery loops. Continuous effort is often treated as sustainable by default.
+### 3. The Missing Recovery Loops
+
+Introduce the central systems problem.
+
+Recovery loops include:
+
+- sleep  
+- mental disengagement  
+- physical movement  
+- emotional regulation  
+- task switching  
+
+Without recovery loops:
+
+- fatigue compounds  
+- thinking slows  
+- decision quality degrades  
+- people misinterpret the problem  
+
+Key observation:
+
+**Overload often looks like incompetence.**
 
 ---
 
-### Pillar 4 — Interpreting System Degradation
-As limits are approached, performance becomes inconsistent. These signals are often interpreted as lack of discipline or ability rather than system strain.
+### 4. When Overload Is Misread
+
+Describe the moment many engineers experience:
+
+- sudden drop in cognitive clarity  
+- inability to reason through problems  
+- confusion and self-doubt  
+- internal narrative of failure  
+
+But from outside the system:
+
+- it appears as lack of motivation  
+- or inconsistency  
+- or career uncertainty  
+
+This section bridges **subjective experience and systemic analysis**.
 
 ---
 
-### Pillar 5 — Recognizing System Limits
-Understanding cognitive work as a constrained system changes how we interpret fatigue, performance, and recovery.
+### 5. Awareness as the First Recovery Mechanism
+
+End with reflection rather than blame.
+
+Key message:
+
+Understanding cognitive limits allows:
+
+- individuals to pace themselves  
+- teams to design healthier workflows  
+- organizations to reduce hidden cost  
+
+The goal is not to assign blame but to **recognize the dynamics of cognitive load and recovery**.
 
 ---
 
 ## Target Audience
 
-Engineers, researchers, designers, and knowledge workers engaged in sustained cognitive effort, as well as readers interested in cognition and systems thinking.
+Primary readers:
+
+- engineers  
+- developers  
+- knowledge workers  
+- technically minded readers  
+- people who have experienced burnout  
+
+Secondary readers:
+
+- engineering managers  
+- technical leaders  
+- readers interested in cognitive science and work systems
 
 ---
 
 ## Tone Definition
 
-Reflective, grounded, and exploratory.
+Tone should be:
 
-The article should describe observable patterns in cognitive work without assigning blame or prescribing solutions.
+- reflective  
+- calm  
+- intellectually disciplined  
+- non-accusatory  
+- empathetic  
+- grounded in science and systems thinking  
+
+Avoid:
+
+- blaming individuals  
+- blaming companies  
+- ideological framing  
+- excessive technical jargon  
 
 ---
 
 ## Scope Boundaries
 
-This article will NOT:
+This article will **not attempt to cover**:
 
-- compare cognitive work to other forms of labor  
-- assign responsibility to individuals or organizations  
-- propose productivity strategies  
-- define exact biological thresholds  
+- detailed neuroscience of burnout  
+- organizational reform proposals  
+- mental health treatment  
+- productivity advice  
+- the full impact of AI on engineering work  
 
-This article WILL:
+Those can be addressed in future articles.
 
-- describe cognition as a constrained system  
-- introduce the role of recovery in sustained performance  
-- explore how misinterpretation occurs  
-- frame limits as natural rather than exceptional  
+This article focuses only on **recognizing recovery limits in cognitive work**.
 
 ---
 
@@ -84,8 +168,8 @@ This article WILL:
 
 The article is complete when:
 
-- the reader understands that cognitive work operates within biological constraints  
-- sustained cognitive effort is reframed as a system with limits  
-- the absence of recovery structure is made visible  
-- performance degradation is understood as system behavior  
-- the reader leaves with a clearer mental model of cognitive load and recovery
+- the concept of cognitive recovery limits is clearly explained  
+- readers recognize the dynamics of overload  
+- the argument is grounded in research  
+- the tone remains reflective rather than accusatory  
+- the piece stays between **1,500–2,500 words**
