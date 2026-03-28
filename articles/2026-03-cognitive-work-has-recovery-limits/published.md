@@ -4,7 +4,7 @@
 
 *Cognitive work draws from finite biological energy. Without recovery, systems don’t return to baseline—they accumulate strain over time.*
 
-*Why high-cognitive professions quietly exceed human recovery capacity.*
+## Why high-cognitive professions quietly exceed human recovery capacity.
 
 Modern knowledge work often assumes that thinking is frictionless.
 
