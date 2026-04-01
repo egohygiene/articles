@@ -295,9 +295,7 @@ And sometimes, the most stable thing you can do…
 
 ## References
 
-# References
-
-## Emotional Regulation & Nervous System
+### Emotional Regulation & Nervous System
 
 Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. *Review of General Psychology*, 2(3), 271–299.  
 https://doi.org/10.1037/1089-2680.2.3.271
@@ -313,7 +311,7 @@ https://doi.org/10.1056/NEJM199801153380307
 
 ---
 
-## Crying & Emotional Expression
+### Crying & Emotional Expression
 
 Vingerhoets, A. J. J. M. (2013). *Why Only Humans Weep: Unravelling the Mysteries of Tears*. Oxford University Press.  
 
@@ -327,7 +325,7 @@ Frey, W. H. (1985). Crying: The mystery of tears. Minneapolis: Winston Press.
 
 ---
 
-## Stress, Release, and Regulation Cycles
+### Stress, Release, and Regulation Cycles
 
 Sapolsky, R. M. (2004). *Why Zebras Don’t Get Ulcers*. Holt Paperbacks.  
 
@@ -337,7 +335,7 @@ van der Kolk, B. A. (2014). *The Body Keeps the Score*. Viking.
 
 ---
 
-## Suppression vs Expression
+### Suppression vs Expression
 
 Gross, J. J., & Levenson, R. W. (1997). Hiding feelings: The acute effects of inhibiting negative and positive emotion. *Journal of Abnormal Psychology*, 106(1), 95–103.  
 https://doi.org/10.1037/0021-843X.106.1.95
@@ -347,7 +345,7 @@ https://doi.org/10.1111/j.1467-9280.1997.tb00403.x
 
 ---
 
-## Ketamine & Emotional Processing / Integration
+### Ketamine & Emotional Processing / Integration
 
 Dore, J., Turnipseed, B., Dwyer, S., et al. (2019). Ketamine assisted psychotherapy (KAP): Patient demographics, clinical data and outcomes in three large practices. *Journal of Psychoactive Drugs*, 51(2), 189–198.  
 https://doi.org/10.1080/02791072.2019.1587556
@@ -357,7 +355,7 @@ https://doi.org/10.1016/j.biopsych.2013.08.009
 
 ---
 
-## Conceptual Foundations (Systems + Mind)
+### Conceptual Foundations (Systems + Mind)
 
 Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*, 11(2), 127–138.  
 https://doi.org/10.1038/nrn2787
