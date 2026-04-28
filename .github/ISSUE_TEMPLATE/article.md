@@ -1,47 +1,161 @@
 ---
+
 name: 🧠 Article Idea
-about: Capture a new Ego Hygiene article concept
-title: "🧠 [Article Title]"
+about: Capture and structure a new article concept
+title: "🧠 [Working Title]"
 labels: article, idea
 assignees: ""
----
+-------------
 
-# 🧠 [Article Title]
+# 🧠 [Working Title]
 
 ## Working Idea
-	[High-level concept of the article]
+
+<!-- 
+1–3 sentences.
+
+What is this about at a high level?
+Do not over-explain.
+-->
+
+[Core idea]
+
+---
 
 ## Core Tension
-	[What conflict, contradiction, or misconception is being explored?]
+
+<!-- 
+What is the underlying conflict, contradiction, or misunderstanding?
+
+This is the engine of the article.
+-->
+
+[What is being resolved or explored?]
+
+---
 
 ## Possible Claim
-	[What is the main argument or insight?]
+
+<!-- 
+What might this article argue?
+
+This does NOT need to be perfect.
+It will be refined later.
+-->
+
+[Potential thesis]
+
+---
 
 ## Domain Anchor
-	[List relevant domains]
-	- 
-	- 
-	- 
+
+<!-- 
+Relevant domains this idea touches.
+
+Keep it focused (3–5 max).
+-->
+
+*
+*
+*
+
+---
 
 ## Structural Direction
-	Pillar 1 — 
-	Pillar 2 — 
-	Pillar 3 — 
-	Pillar 4 — 
-	Pillar 5 — 
+
+<!-- 
+High-level flow of the article.
+
+Do NOT write full sections.
+Just define movement.
+-->
+
+Pillar 1 —
+Pillar 2 —
+Pillar 3 —
+Pillar 4 —
+Pillar 5 —
+
+---
 
 ## Research Direction
-	[What areas need grounding or references?]
 
-## Visual Possibilities (Placeholder Planning Only)
-	header.png — 
-	figure1.png — 
-	figure2.png — 
+<!-- 
+Only include if needed.
+
+What needs grounding?
+What theories or frameworks might apply?
+-->
+
+*
+*
+*
+
+---
+
+## Visual Possibilities (Optional)
+
+<!-- 
+Only include if visuals are likely useful.
+
+Follow visuals.spec.md:
+- relationships
+- loops
+- comparisons
+-->
+
+* header.png —
+* figure1.png —
+* figure2.png —
+
+---
 
 ## Why It Matters
-	- 
-	- 
-	- 
+
+<!-- 
+Why should someone care?
+
+Focus on reader value, not abstract importance.
+-->
+
+*
+*
+*
+
+---
+
+## Voice / Tone Notes (Optional)
+
+<!-- 
+Any constraints or reminders:
+
+- personal vs conceptual entry
+- emotional tone
+- domain emphasis
+-->
+
+[Optional notes]
+
+---
+
+## Scope Boundaries (Optional)
+
+<!-- 
+What this article is NOT trying to do.
+
+Helps prevent drift later.
+-->
+
+*
+*
+*
+
+---
 
 ## Notes
-	[Any tone, constraints, or reminders]
+
+<!-- 
+Free space for anything else.
+
+Keep it minimal.
+-->
