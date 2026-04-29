@@ -2,7 +2,12 @@
 
 ![header](assets/header.png)
 
-*Our models are precise. The horizon always extends beyond them.*
+<!-- 
+ALT TEXT (Medium):
+Person sitting at a desk analyzing structured diagrams while a vast abstract space expands outward beyond the workspace
+-->
+
+*Conceptual representation of structured thinking extending into an open, unbounded space beyond formal models. This image was generated using AI.*
 
 ---
 
@@ -34,7 +39,7 @@ And still, engineers build.
 
 They do not wait for final metaphysical closure before acting. They operate with the best models available at the time.
 
-The desire for absolute certainty is psychological.  
+The desire for absolute certainty is psychological.
 The discipline of high-confidence modeling is practical.
 
 That distinction changes everything.
@@ -61,7 +66,12 @@ It is disciplined humility.
 
 ![figure1](assets/figure1.png)
 
-*Complex reality must be compressed into structured models before it becomes usable.*
+<!-- 
+ALT TEXT (Medium):
+Diagram showing complex reality being compressed into a simplified structured model
+-->
+
+*Complex reality must be compressed into structured models before it becomes usable. This image was generated using AI.*
 
 ---
 
@@ -77,7 +87,7 @@ Dogmatism and nihilism appear opposed, but psychologically they share instabilit
 
 For technically trained minds, this tension can be subtle. We want coherent systems. We want clean abstractions. We want resolution.
 
-But forcing resolution beyond evidence produces ideological rigidity.  
+But forcing resolution beyond evidence produces ideological rigidity.
 Abandoning resolution entirely produces collapse.
 
 Stability lives between those extremes.
@@ -86,7 +96,12 @@ Stability lives between those extremes.
 
 ![figure2](assets/figure2.png)
 
-*Psychological stability lives between rigid certainty and total collapse.*
+<!-- 
+ALT TEXT (Medium):
+Three states showing rigid certainty, balanced stability, and total collapse represented as different cognitive positions
+-->
+
+*Psychological stability lives between rigid certainty and total collapse. This image was generated using AI.*
 
 ---
 
@@ -100,45 +115,52 @@ We design for reliability within limits.
 
 What if that posture extended beyond engineering?
 
-You do not need metaphysical certainty to live well.  
+You do not need metaphysical certainty to live well.
 You need models that work reliably enough to move forward.
 
 > “I can’t know with metaphysical certainty, but I can operate with high-confidence models.”
 
 That sentence is not resignation. It is freedom.
 
-It allows action without absolutism.  
+It allows action without absolutism.
 Humility without paralysis.
-
-It preserves agency without pretending to omniscience.
+Agency without pretending to omniscience.
 
 ---
 
 ## Intellectual Hygiene
 
-Certainty is not a destination. It is a maintenance problem.
+Certainty is not a destination.
 
-Beliefs require updating.  
-Models require revision.  
+It is a maintenance problem.
+
+Beliefs require updating.
+Models require revision.
 Assumptions require inspection.
 
 This is not existential crisis. It is system upkeep.
 
 Intellectual hygiene means:
 
-- Separating identity from belief.
-- Updating when evidence shifts.
-- Holding confidence proportionally to support.
-- Allowing revision without ego collapse.
+* separating identity from belief
+* updating when evidence shifts
+* holding confidence proportionally to support
+* allowing revision without ego collapse
 
-Balance is not perfection.  
-It is iteration.
+Balance is not perfection.
+
+> it is iteration.
 
 ---
 
 ![figure3](assets/figure3.png)
 
-*Experience feeds evidence. Evidence updates models. Stability emerges from iteration.*
+<!-- 
+ALT TEXT (Medium):
+Feedback loop showing observations informing beliefs and beliefs updating through evidence
+-->
+
+*Experience feeds evidence. Evidence updates models. Stability emerges from iteration. This image was generated using AI.*
 
 ---
 
@@ -152,13 +174,15 @@ You will not reach final epistemic ground.
 
 But you can operate intelligently.
 
-You can design systems that work.  
-You can revise when they fail.  
+You can design systems that work.
+You can revise when they fail.
 You can hold paradox without breaking.
 
 Absolute answers are not required.
 
-High-confidence models are enough.
+> high-confidence models are enough.
+
+---
 
 ## References
 
@@ -166,10 +190,14 @@ Peirce, C. S. (1877). *The Fixation of Belief.* Popular Science Monthly.
 
 Kuhn, T. S. (1962). *The Structure of Scientific Revolutions.* University of Chicago Press.
 
-Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience, 11*(2), 127–138. https://doi.org/10.1038/nrn2787
+Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience, 11*(2), 127–138. <https://doi.org/10.1038/nrn2787>
 
-Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. *Behavioral and Brain Sciences, 36*(3), 181–204. https://doi.org/10.1017/S0140525X12000477
+Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. *Behavioral and Brain Sciences, 36*(3), 181–204. <https://doi.org/10.1017/S0140525X12000477>
 
-Dunning, D., & Kruger, J. (1999). Unskilled and unaware of it. *Journal of Personality and Social Psychology, 77*(6), 1121–1134. https://doi.org/10.1037/0022-3514.77.6.1121
+Dunning, D., & Kruger, J. (1999). Unskilled and unaware of it. *Journal of Personality and Social Psychology, 77*(6), 1121–1134. <https://doi.org/10.1037/0022-3514.77.6.1121>
 
-Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. *Review of General Psychology, 2*(2), 175–220. https://doi.org/10.1037/1089-2680.2.2.175
+Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. *Review of General Psychology, 2*(2), 175–220. <https://doi.org/10.1037/1089-2680.2.2.175>
+
+---
+
+*This article was written by Alan Szmyt, with AI used as a tool for structuring, refinement, and visual generation. All ideas originate from the author's own thinking.*
