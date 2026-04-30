@@ -1,4 +1,4 @@
-# Between Dogma and Nothingness
+# ⚖️ Between Dogma and Nothingness
 
 ![header](assets/header.png)
 

@@ -1,4 +1,4 @@
-# Cognitive Load Is the Missing Layer in Developer Experience
+# 🧠 Cognitive Load Is the Missing Layer in Developer Experience
 
 ![header](assets/header.png)
 

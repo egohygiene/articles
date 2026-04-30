@@ -48,6 +48,7 @@ This article argues that cognitive load should be treated as a first-class desig
 ## Target Audience
 
 **Written for:**
+
 - Software engineers
 - Engineering managers
 - Developer experience (DX) advocates
@@ -55,6 +56,7 @@ This article argues that cognitive load should be treated as a first-class desig
 - Systems thinkers interested in human factors
 
 **Not written for:**
+
 - Academic researchers (this is not a literature review)
 - Productivity influencers (this is not a self-help guide)
 
@@ -69,6 +71,7 @@ This article argues that cognitive load should be treated as a first-class desig
 - Slightly corrective, but not combative
 
 **Do not:**
+
 - Rant about Agile or management failures.
 - Adopt manifesto energy.
 - Overshare personal experience.

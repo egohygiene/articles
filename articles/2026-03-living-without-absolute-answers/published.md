@@ -1,4 +1,4 @@
-# Living Without Absolute Answers
+# 🧩 Living Without Absolute Answers
 
 ![header](assets/header.png)
 

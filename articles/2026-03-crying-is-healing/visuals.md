@@ -4,12 +4,14 @@
 A soft, emotionally resonant illustration of a person crying—not in distress, but in release.
 
 **Composition**
+
 - Character sitting or driving quietly
 - Tears flowing naturally (not exaggerated)
 - Warm + cool color contrast (tension vs release)
 - Subtle glow or softness around them
 
 **Purpose**
+
 - Normalize crying visually
 - Immediately signal: this is not about weakness, but about something deeper
 - Ground the reader in experience before abstraction
@@ -22,19 +24,23 @@ A soft, emotionally resonant illustration of a person crying—not in distress, 
 A simple system diagram showing emotional buildup and release.
 
 **Left side**
+
 - Compressed, dense shapes
 - Chaotic lines / noise
 - Labels like: stress, pressure, emotional load
 
 **Center**
+
 - Transition point (crack, opening, threshold)
 
 **Right side**
+
 - Flowing lines
 - Smooth gradients
 - Expanded space
 
 **Purpose**
+
 - Show that crying is part of a larger system pattern
 - Introduce the idea of "release" as a mechanism, not a failure
 
@@ -49,11 +55,13 @@ LEFT → biological repair
 RIGHT → emotional repair
 
 **Left (Cellular)**
+
 - Simplified cell diagram
 - Highlighted “damage → repair → restored state”
 - Clean, minimal scientific illustration style
 
 **Right (Human)**
+
 - Person crying
 - Around them: abstract representation of internal processes
   - flowing lines
@@ -61,9 +69,11 @@ RIGHT → emotional repair
   - soft pulses / signals
 
 **Bridge between them**
+
 - Subtle connecting line or shared visual language
 
 **Purpose**
+
 - Anchor your key idea:
   Crying = emotional repair (analogous to biological repair)
 - Make the insight intuitive without over-explaining
@@ -76,6 +86,7 @@ RIGHT → emotional repair
 Multiple internal signals converging into a single flowing process.
 
 **Composition**
+
 - Many threads / signals coming from different directions:
   - memory
   - stress
@@ -85,10 +96,12 @@ Multiple internal signals converging into a single flowing process.
 - Then expand outward into calm / clarity
 
 **Optional layer**
+
 - Subtle dual-tone (tension vs release)
 - Not literal labels—keep it conceptual
 
 **Purpose**
+
 - Represent what you said:
   “a network of connectivity resolving something”
 - Show crying as **integration**, not just release

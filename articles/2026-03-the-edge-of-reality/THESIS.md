@@ -1,6 +1,7 @@
 # THESIS.md
 
 ## Working Title
+
 The Edge of Reality
 
 ---
@@ -14,28 +15,35 @@ Every system of knowledge operates within assumptions and models that simplify r
 ## Structural Pillars
 
 ### Pillar 1 — Why Humans Build Models
+
 Humans compress complexity into models in order to navigate the world. These models are useful but always incomplete.
 
 ### Pillar 2 — Where Models Break
+
 As systems grow more complex, contradictions and paradoxes emerge that signal the limits of a model’s explanatory power.
 
 ### Pillar 3 — The Illusion of Complete Knowledge
+
 Dogma and scientism both assume models can fully capture reality, but history shows that every framework eventually encounters limits.
 
 ### Pillar 4 — The Edge of Explanation
+
 At the boundary of knowledge, questions often become recursive: observer vs observed, subject vs object, model vs reality.
 
 ### Pillar 5 — Humility at the Boundary
+
 Recognizing the edge of reality allows us to keep exploring rather than forcing premature answers.
 
 ---
 
 ## Target Audience
+
 Philosophically curious readers, engineers, and systems thinkers interested in the limits of knowledge and the role of models in understanding reality.
 
 ---
 
 ## Tone Definition
+
 Reflective, exploratory, and grounded. The tone should invite curiosity about the limits of knowledge without drifting into mysticism or metaphysical certainty.
 
 ---

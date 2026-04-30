@@ -1,4 +1,4 @@
-# The Edge of Reality
+# 🌌 The Edge of Reality
 
 ![header](assets/header.png)
 

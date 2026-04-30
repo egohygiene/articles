@@ -1,4 +1,4 @@
-# The Freedom of Not Knowing
+# 🌿 The Freedom of Not Knowing
 
 ![header](assets/header.png)
 

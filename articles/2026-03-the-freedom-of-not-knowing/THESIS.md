@@ -15,18 +15,23 @@ Modern life rewards certainty. We are encouraged to have opinions, answers, iden
 ## Structural Pillars
 
 ### Pillar 1 — The Burden of Needing to Know
+
 How cultural and cognitive pressures push us toward premature certainty. The psychological discomfort of ambiguity and why the brain seeks closure.
 
 ### Pillar 2 — Why Uncertainty Feels Threatening
+
 Cognitive and neuroscientific grounding: predictive processing, need for cognitive closure, anxiety loops, and how unresolved ambiguity activates stress responses.
 
 ### Pillar 3 — Relief Through Release
+
 What changes when we stop demanding ultimate answers. Reduction in rumination. Improved clarity. Increased emotional stability.
 
 ### Pillar 4 — Freedom and Creativity
+
 How not needing metaphysical certainty expands thinking, decision-making flexibility, and creative design space.
 
 ### Pillar 5 — Practicing Not Knowing
+
 Concrete practices: provisional thinking, delayed conclusions, probabilistic framing, ego separation from belief.
 
 ---

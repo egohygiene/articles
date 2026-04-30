@@ -1,4 +1,4 @@
-# Holding Paradox Without Breaking
+# 🧠 Holding Paradox Without Breaking
 
 ![header](assets/header.png)
 

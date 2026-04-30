@@ -15,18 +15,23 @@ Engineers and analytically trained professionals are conditioned to seek precisi
 ## Structural Pillars
 
 ### Pillar 1 — The Illusion of Absolute Certainty  
+
 Human cognition craves closure. Professional environments often reward confident answers over provisional ones. This section examines the psychological appeal of certainty and why it exceeds what our epistemic tools can justify.
 
 ### Pillar 2 — Models, Not Truths  
+
 Science functions through model construction, not metaphysical proclamation. This section clarifies the distinction between predictive reliability and ontological claims, introducing probabilistic reasoning and fallibilism as disciplined postures rather than weaknesses.
 
 ### Pillar 3 — The Cost of Rigid Ideology  
+
 When identity fuses with belief, flexibility collapses. This section explores how dogmatism on one side and radical skepticism on the other both create instability, particularly for technically trained minds.
 
 ### Pillar 4 — Operating with High-Confidence Models  
+
 A practical framework for living and designing systems without absolute answers. This section articulates how engineers already operate under uncertainty and how that mindset can be extended to philosophical and existential domains.
 
 ### Pillar 5 — Intellectual Hygiene  
+
 Certainty is not the goal; maintenance is. This section introduces the idea of ongoing belief updating, ego regulation, and disciplined humility as forms of cognitive hygiene rather than ideological transformation.
 
 ---

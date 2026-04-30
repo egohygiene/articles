@@ -1,4 +1,4 @@
-# There Is No Black Box
+# 🔍 There Is No Black Box
 
 ![header](assets/header.png)
 

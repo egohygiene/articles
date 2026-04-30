@@ -15,18 +15,23 @@ Dogmatism and nihilism appear to be opposites—one asserts certainty, the other
 ## Structural Pillars
 
 ### Pillar 1 — The Appeal of Dogma  
+
 Why certainty feels stabilizing. How rigid belief reduces cognitive entropy. The emotional relief of “knowing.”
 
 ### Pillar 2 — The Seduction of Nothingness  
+
 Why nihilism can feel liberating. How rejecting meaning can function as an escape from responsibility and ambiguity.
 
 ### Pillar 3 — Identity Fusion  
+
 How beliefs become self. The neuroscience and psychology of identity attachment. Why attacks on belief feel like attacks on the self.
 
 ### Pillar 4 — The False Opposition  
+
 Why dogmatism and nihilism are structurally similar strategies. Both collapse complexity to reduce internal strain.
 
 ### Pillar 5 — Stability in the Middle  
+
 What disciplined flexibility looks like. Conviction without rigidity. Skepticism without collapse. Identity without fusion.
 
 ---

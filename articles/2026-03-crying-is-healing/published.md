@@ -1,4 +1,4 @@
-# Crying Is Healing — The Nervous System’s Repair Mechanism
+# 💧 Crying Is Healing — The Nervous System’s Repair Mechanism
 
 ![header](assets/header.png)
 
