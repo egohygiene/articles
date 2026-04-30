@@ -179,7 +179,7 @@ Intent determines evaluation.
 AI can amplify structure.
 It cannot replace perspective.
 
-![figure3](assets/figure4.png)
+![figure4](assets/figure4.png)
 
 <!-- 
 ALT TEXT (Medium):

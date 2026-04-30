@@ -6,12 +6,18 @@ from pathlib import Path
 import structlog
 
 from mindlint.config.defaults import REQUIRED_FOOTER_DISCLOSURE, REQUIRED_IMAGE_DISCLOSURE
-from mindlint.models.article import Article, ImageReference, Section
+from mindlint.models.article import Article, ImageReference, RuleSuppression, Section
 
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 IMAGE_RE = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
 MEDIUM_ALT_RE = re.compile(r"<!--\s*ALT TEXT \(Medium\):.*?-->", re.IGNORECASE)
 MEDIUM_ALT_LABEL_RE = re.compile(r"ALT TEXT \(Medium\):", re.IGNORECASE)
+SUPPRESSION_RE = re.compile(
+    r"<!--\s*mindlint-disable(?P<next>-next-line)?(?::|\s)?(?P<body>.*?)\s*-->",
+    re.IGNORECASE,
+)
+SUPPRESSION_REASON_RE = re.compile(r"\s+(?:--|#)\s+", re.ASCII)
+RULE_ID_RE = re.compile(r"[a-z0-9][a-z0-9-]*|\*", re.IGNORECASE)
 log = structlog.get_logger(__name__)
 
 
@@ -28,6 +34,7 @@ def parse_article(article_dir: Path) -> Article:
     sections = _extract_sections(lines)
     title = _extract_title(lines)
     images = _extract_images(lines)
+    suppressions = _extract_suppressions(lines)
     has_table_of_contents = _has_section(sections, "Table of Contents")
     has_references = _has_section(sections, "References")
     has_footer_ai_disclosure = _has_footer_disclosure(text)
@@ -39,6 +46,7 @@ def parse_article(article_dir: Path) -> Article:
         line_count=len(lines),
         section_count=len(sections),
         image_count=len(images),
+        suppression_count=len(suppressions),
         has_table_of_contents=has_table_of_contents,
         has_references=has_references,
         has_footer_ai_disclosure=has_footer_ai_disclosure,
@@ -51,6 +59,7 @@ def parse_article(article_dir: Path) -> Article:
         raw_text=text,
         sections=sections,
         images=images,
+        suppressions=suppressions,
         has_table_of_contents=has_table_of_contents,
         has_references=has_references,
         has_footer_ai_disclosure=has_footer_ai_disclosure,
@@ -136,6 +145,65 @@ def _extract_images(lines: list[str]) -> list[ImageReference]:
             )
     log.debug("parser.images_extracted", count=len(images))
     return images
+
+
+def _extract_suppressions(lines: list[str]) -> list[RuleSuppression]:
+    suppressions: list[RuleSuppression] = []
+    for index, line in enumerate(lines):
+        match = SUPPRESSION_RE.search(line)
+        if not match:
+            continue
+
+        line_number = index + 1
+        rule_ids, reason = _parse_suppression_body(match.group("body"))
+        target_line_number = (
+            _find_next_content_line(lines, index)
+            if match.group("next")
+            else None
+        )
+        suppression = RuleSuppression(
+            rule_ids=frozenset(rule_ids),
+            line_number=line_number,
+            target_line_number=target_line_number,
+            reason=reason,
+        )
+        suppressions.append(suppression)
+        log.debug(
+            "parser.suppression_found",
+            line_number=line_number,
+            target_line_number=target_line_number,
+            rule_ids=sorted(suppression.rule_ids),
+            reason=reason,
+            scope="next-line" if target_line_number is not None else "file",
+        )
+
+    log.debug("parser.suppressions_extracted", count=len(suppressions))
+    return suppressions
+
+
+def _parse_suppression_body(body: str) -> tuple[set[str], str | None]:
+    body = body.strip()
+    if not body:
+        return {"all"}, None
+
+    parts = SUPPRESSION_REASON_RE.split(body, maxsplit=1)
+    rule_text = parts[0]
+    reason = parts[1].strip() if len(parts) > 1 and parts[1].strip() else None
+    rule_ids = {match.group(0).lower() for match in RULE_ID_RE.finditer(rule_text)}
+    if not rule_ids:
+        rule_ids = {"all"}
+    return rule_ids, reason
+
+
+def _find_next_content_line(lines: list[str], suppression_line_index: int) -> int | None:
+    for index in range(suppression_line_index + 1, len(lines)):
+        candidate = lines[index].strip()
+        if not candidate:
+            continue
+        if candidate.startswith("<!--") and candidate.endswith("-->"):
+            continue
+        return index + 1
+    return None
 
 
 def _find_caption(lines: list[str], image_line_index: int) -> str | None:

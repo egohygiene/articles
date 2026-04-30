@@ -204,4 +204,6 @@ Freedom without denial.
 
 ---
 
+<!-- mindlint-disable references -->
+
 *This article was written by Alan Szmyt, with AI used as a tool for structuring, refinement, and visual generation. All ideas originate from the author's own thinking.*

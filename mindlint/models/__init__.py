@@ -1,4 +1,11 @@
-from mindlint.models.article import Article, ImageReference, Section
+from mindlint.models.article import Article, ImageReference, RuleSuppression, Section
 from mindlint.models.issue import Issue, Severity
 
-__all__ = ["Article", "ImageReference", "Issue", "Section", "Severity"]
+__all__ = [
+    "Article",
+    "ImageReference",
+    "Issue",
+    "RuleSuppression",
+    "Section",
+    "Severity",
+]
