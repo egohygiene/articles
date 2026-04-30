@@ -1,47 +1,69 @@
-import click
+from __future__ import annotations
+
 from pathlib import Path
 
-from mindlint.models.article import Article
-from mindlint.parsers.article_parser import parse_article
+import click
+
+from mindlint.ai import AIProvider, AnthropicProvider, OllamaProvider, OpenAIProvider
+from mindlint.config.defaults import DEFAULT_OLLAMA_MODEL
+from mindlint.core.reporter import RichReporter
 from mindlint.core.runner import LintRunner
-from mindlint.rules.base import Issue
-from mindlint.rules.emoji import EmojiTitleRule
-
-
-def find_articles(base_path: Path) -> list[Path]:
-    return [
-        d for d in base_path.iterdir()
-        if d.is_dir() and (d / "published.md").exists()
-    ]
+from mindlint.models.issue import Severity
 
 
 @click.command()
-@click.argument("path", default=".", required=False)
-def main(path: str):
-    target: Path = Path(path).resolve()
-
-    click.echo("🧠 mindlint — article linter")
-    click.echo(f"📂 Target: {target}")
-
+@click.argument(
+    "path",
+    default=".",
+    required=False,
+    type=click.Path(path_type=Path),
+)
+@click.option("--ai", "enable_ai", is_flag=True, help="Enable qualitative AI checks.")
+@click.option(
+    "--ai-provider",
+    type=click.Choice(["ollama", "openai", "anthropic"]),
+    default="ollama",
+    show_default=True,
+    help="AI provider to use when --ai is enabled.",
+)
+@click.option(
+    "--ollama-model",
+    default=DEFAULT_OLLAMA_MODEL,
+    show_default=True,
+    help="Ollama model to use when --ai-provider=ollama.",
+)
+@click.option(
+    "--fail-on",
+    type=click.Choice(["info", "warning", "error"]),
+    default="error",
+    show_default=True,
+    help="Lowest issue severity that should return a non-zero exit code.",
+)
+def main(
+    path: Path,
+    enable_ai: bool,
+    ai_provider: str,
+    ollama_model: str,
+    fail_on: Severity,
+) -> None:
+    target = path.resolve()
     if not target.exists():
-        click.echo("❌ Path does not exist")
-        raise SystemExit(1)
+        raise click.ClickException(f"Path does not exist: {target}")
 
-    article_dirs: list[Path] = find_articles(target)
+    provider = _build_ai_provider(ai_provider, ollama_model) if enable_ai else None
+    runner = LintRunner(ai_provider=provider)
+    result = runner.run_path(target)
+    RichReporter().report(result)
+    raise SystemExit(result.exit_code(fail_on))
 
-    click.echo(f"\nFound {len(article_dirs)} articles:\n")
 
-    runner: LintRunner = LintRunner([
-        EmojiTitleRule(),  # stub rule
-    ])
+def _build_ai_provider(provider_name: str, ollama_model: str) -> AIProvider:
+    if provider_name == "ollama":
+        return OllamaProvider(model=ollama_model)
+    if provider_name == "openai":
+        return OpenAIProvider()
+    if provider_name == "anthropic":
+        return AnthropicProvider()
 
-    for article_dir in article_dirs:
-        article: Article = parse_article(article_dir)
-        issues: list[Issue] = runner.run(article)
+    raise click.ClickException(f"Unsupported AI provider: {provider_name}")
 
-        if not issues:
-            click.echo(f"✔ {article_dir.name}")
-        else:
-            click.echo(f"⚠ {article_dir.name}")
-            for issue in issues:
-                click.echo(f"   - {issue}")

@@ -1,27 +1,36 @@
+from __future__ import annotations
+
 from dataclasses import dataclass
 from pathlib import Path
-from typing import List
 
 
-@dataclass
+@dataclass(frozen=True)
 class Section:
+    level: int
     title: str
     content: str
+    line_number: int | None = None
 
 
-@dataclass
-class Image:
+@dataclass(frozen=True)
+class ImageReference:
+    alt_text: str
     path: str
-    has_caption: bool = False
-    has_ai_disclosure: bool = False
-    has_alt_comment: bool = False
+    caption: str | None
+    has_medium_alt_comment: bool
+    has_ai_caption_disclosure: bool
+    line_number: int | None = None
 
 
-@dataclass
+@dataclass(frozen=True)
 class Article:
     path: Path
+    published_path: Path
     title: str
-    has_toc: bool
-    sections: List[Section]
-    images: List[Image]
     raw_text: str
+    sections: list[Section]
+    images: list[ImageReference]
+    has_table_of_contents: bool
+    has_references: bool
+    has_footer_ai_disclosure: bool
+

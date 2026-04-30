@@ -6,10 +6,8 @@ from mindlint.models.article import Article
 from mindlint.models.issue import Issue
 
 
-class Rule(ABC):
-    rule_id: str
-
+class AIProvider(ABC):
     @abstractmethod
-    def check(self, article: Article) -> list[Issue]:
+    def analyze_article(self, article: Article) -> list[Issue]:
         raise NotImplementedError
 
