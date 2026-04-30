@@ -1,6 +1,7 @@
 # THESIS.md
 
 ## Working Title
+
 Mood Colors Your Reality
 
 ---
@@ -20,36 +21,43 @@ Understanding mood as a perceptual condition — rather than just an emotional r
 ## Structural Pillars
 
 ### Pillar 1 — The Same World, Different Experience
+
 The external world can remain unchanged while the experience of it shifts dramatically. Simple examples (humor, music, social interaction) show how perception varies with internal state.
 
 ---
 
 ### Pillar 2 — We Do Not See Raw Reality
+
 Reality is not experienced directly. The brain constructs a usable model from incomplete data. This aligns with the idea that we never access the “pixels” directly — only a rendered image.
 
 ---
 
 ### Pillar 3 — Mood as a Global Condition
+
 Mood is not a local reaction but a background state that shapes perception globally. It acts like color grading or lighting on a rendered scene — affecting everything simultaneously rather than one element at a time.
 
 ---
 
 ### Pillar 4 — When Meaning Changes or Disappears
+
 In certain moods, things that normally feel engaging lose their impact (e.g., nothing feels funny). This is not just interpretation — it reflects a shift in how meaning is generated and perceived.
 
 ---
 
 ### Pillar 5 — Regaining Degrees of Freedom
+
 Recognizing mood as a filter introduces separation between perception and reality. This does not invalidate experience, but it prevents over-identification with it, allowing more flexibility in response.
 
 ---
 
 ## Target Audience
+
 Readers interested in self-awareness, perception, and the interaction between psychology and reality — especially those who have noticed shifts in how the world feels depending on their internal state.
 
 ---
 
 ## Tone Definition
+
 Grounded, reflective, and precise. The writing should remain accessible and experiential, while avoiding exaggeration or metaphysical overreach. The goal is clarity, not persuasion.
 
 ---
