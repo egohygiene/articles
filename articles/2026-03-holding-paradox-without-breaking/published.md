@@ -11,6 +11,19 @@ Split landscape showing structured grid on one side and natural terrain on the o
 
 ---
 
+## Table of Contents
+
+* Introduction
+* Why the Mind Rejects Paradox
+* When Systems Produce Contradictions
+* The Collapse Into Simplicity
+* Identity Fusion
+* The Imagined Outside View
+* Stability in the Middle
+* Closing Reflection
+
+---
+
 At some point, every thoughtful person runs into contradictions.
 
 Two ideas both seem true.

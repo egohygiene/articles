@@ -11,6 +11,21 @@ Person sitting at a desk working with multiple layered software interfaces and d
 
 ---
 
+## Table of Contents
+
+* Introduction
+* Encapsulation Is Not Ignorance
+* Zoom Is Relative
+* AI as Scaled Encapsulation
+* Compression Without Return
+
+  * Cognitive Oscillation
+* Creative Work and Amplified Graphs
+* The Real Risk
+* Closing Reflection
+
+---
+
 ## Introduction
 
 In conversations about artificial intelligence, one phrase appears repeatedly:

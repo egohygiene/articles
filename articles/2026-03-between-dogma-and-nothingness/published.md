@@ -11,6 +11,18 @@ Two human figures standing side by side, one solid and glowing, the other dissol
 
 ---
 
+## Table of Contents
+
+* Introduction
+* The Appeal of Dogma
+* The Seduction of Nothingness
+* The False Opposition
+* Identity Fusion
+* Stability in the Middle
+* Closing Reflection
+
+---
+
 At first glance, dogmatism and nihilism appear to be opposites.
 
 One insists that truth is already known and must be defended.

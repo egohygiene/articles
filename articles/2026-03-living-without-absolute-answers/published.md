@@ -11,6 +11,18 @@ Person sitting at a desk analyzing structured diagrams while a vast abstract spa
 
 ---
 
+## Table of Contents
+
+* Introduction
+* The Illusion of Absolute Certainty
+* Models, Not Truths
+* The Cost of Rigid Ideology
+* Operating with High-Confidence Models
+* Intellectual Hygiene
+* Closing Reflection
+
+---
+
 I used to think intellectual maturity meant getting closer to certainty.
 
 Better models. Fewer contradictions. Cleaner explanations. A more stable philosophical ground.

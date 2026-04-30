@@ -11,6 +11,18 @@ Person standing in an open landscape beneath a sky with a large question mark fo
 
 ---
 
+## Table of Contents
+
+* Introduction
+* The Burden of Needing to Know
+* Why Uncertainty Feels Threatening
+* Relief Through Release
+* Freedom and Creativity
+* Practicing Not Knowing
+* Closing Reflection
+
+---
+
 There is a quiet pressure in modern life to have an answer for everything.
 
 Political opinions. Philosophical positions. Career trajectories. Identity labels. Life plans.

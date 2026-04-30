@@ -1,8 +1,25 @@
 # The Edge of Reality
 
-![Header](assets/header.png)
+![header](assets/header.png)
 
-*Where explanation fades, curiosity begins.*
+<!-- 
+ALT TEXT (Medium):
+Person standing on a structured grid looking out toward a vast unknown space beyond the system boundary
+-->
+
+*Conceptual representation of the boundary between structured understanding and the unknown beyond it. This image was generated using AI.*
+
+---
+
+## Table of Contents
+
+* Introduction
+* Why We Build Models
+* When the Model Meets Its Limit
+* The Observer Inside the System
+* The Edge of Explanation
+* The Expanding Frontier
+* Closing Reflection
 
 ---
 
@@ -30,8 +47,8 @@ Reality is far too detailed for the human mind to process directly.
 
 So we compress it.
 
-Maps reduce landscapes to symbols.  
-Scientific theories reduce phenomena to equations.  
+Maps reduce landscapes to symbols.
+Scientific theories reduce phenomena to equations.
 Mental models reduce situations to patterns.
 
 This compression allows us to predict, build, and communicate.
@@ -42,9 +59,14 @@ The model works precisely because it simplifies the territory.
 
 ---
 
-![Figure 1](assets/figure1.png)
+![figure1](assets/figure1.png)
 
-*Maps simplify reality so it can be navigated. The territory always contains more detail than the model.*
+<!-- 
+ALT TEXT (Medium):
+Comparison between simplified map view and detailed real-world terrain showing loss of information
+-->
+
+*Maps simplify reality so it can be navigated. The territory always contains more detail than the model. This image was generated using AI.*
 
 ---
 
@@ -88,9 +110,14 @@ Our models are always built from somewhere inside the structure we are trying to
 
 ---
 
-![Figure 2](assets/figure2.png)
+![figure2](assets/figure2.png)
 
-*Observers build models of the systems they inhabit. Complete objectivity is difficult because the observer cannot fully step outside the system being described.*
+<!-- 
+ALT TEXT (Medium):
+Diagram showing observer embedded within the system they are modeling
+-->
+
+*Observers build models of the systems they inhabit. Complete objectivity is difficult because the observer cannot fully step outside the system being described. This image was generated using AI.*
 
 ---
 
@@ -100,16 +127,16 @@ As knowledge grows, something interesting happens.
 
 Our understanding expands outward.
 
-New theories appear.  
-New models explain more phenomena.  
+New theories appear.
+New models explain more phenomena.
 New tools reveal deeper structure.
 
 But every expansion of knowledge also expands the boundary where explanation stops.
 
 At that boundary, questions begin to fold back on themselves.
 
-The system references the observer.  
-The observer becomes part of the observation.  
+The system references the observer.
+The observer becomes part of the observation.
 The models reveal their own limits.
 
 This boundary is what we might call the **edge of reality**.
@@ -134,9 +161,14 @@ The horizon moves.
 
 ---
 
-![Figure 3](assets/figure3.png)
+![figure3](assets/figure3.png)
 
-*As knowledge expands, the boundary between what we understand and what remains unknown grows with it.*
+<!-- 
+ALT TEXT (Medium):
+Expanding boundary between known and unknown areas increasing as knowledge grows
+-->
+
+*As knowledge expands, the boundary between what we understand and what remains unknown grows with it. This image was generated using AI.*
 
 ---
 
@@ -154,9 +186,8 @@ This is not a failure of knowledge.
 
 It is a natural consequence of modeling a universe that is larger than any single framework.
 
-The edge of reality is not where understanding ends.
-
-It is where exploration begins.
+> the edge of reality is not where understanding ends.
+> it is where exploration begins.
 
 ---
 
@@ -166,8 +197,12 @@ Popper, K. (1959). *The Logic of Scientific Discovery*. Routledge.
 
 Kuhn, T. S. (1962). *The Structure of Scientific Revolutions*. University of Chicago Press.
 
-Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*, 11(2), 127–138.
+Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience, 11*(2), 127–138.
 
-Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. *Behavioral and Brain Sciences*, 36(3), 181–204.
+Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. *Behavioral and Brain Sciences, 36*(3), 181–204.
 
 Jaynes, E. T. (2003). *Probability Theory: The Logic of Science*. Cambridge University Press.
+
+---
+
+*This article was written by Alan Szmyt, with AI used as a tool for structuring, refinement, and visual generation. All ideas originate from the author's own thinking.*
