@@ -103,7 +103,7 @@ Constraints:
 
 Purpose:
 
-* compress complexity through diagrams
+* compress complexity through visuals
 * clarify relationships that are difficult to express linearly
 
 Visuals typically appear:
@@ -126,9 +126,9 @@ Purpose:
 * shift perspective
 * introduce deeper or alternative interpretation
 
-This often includes:
+Common patterns:
 
-* “There is another way to see this”
+* “There is another way to see this…”
 * “The deeper issue is…”
 * “The problem is not…”
 
@@ -175,7 +175,7 @@ Characteristics:
 Avoid:
 
 * summaries
-* repetition of earlier points
+* repetition
 * exaggerated conclusions
 
 ---
@@ -196,7 +196,49 @@ Avoid:
 
 ---
 
-## 4. Flow Integrity
+## 4. Compression Moments (Quote Blocks)
+
+Certain ideas benefit from being visually separated.
+
+Use quote blocks when:
+
+* a core principle is being distilled
+* a transition point needs emphasis
+* the article reaches a conceptual turning point
+* the closing insight needs to land cleanly
+
+Example pattern:
+
+```plaintext
+> This is the distilled insight.
+```
+
+Constraints:
+
+* use sparingly (2–4 per article is typical)
+* do not use for simple emphasis
+* do not over-stack multiple quote blocks
+* each should feel like a “pause,” not decoration
+
+---
+
+## 5. Table of Contents Placement
+
+If included, the Table of Contents should:
+
+* appear immediately after the header image and caption
+* mirror section headers exactly
+* use plain text (no links or anchors)
+
+Purpose:
+
+* improve navigation
+* reinforce structure
+* not interrupt flow
+
+---
+
+## 6. Flow Integrity
 
 A well-structured article should feel:
 
@@ -210,24 +252,24 @@ If a section can be removed without loss:
 
 ---
 
-## 5. Structural Anti-Patterns
+## 7. Structural Anti-Patterns
 
 Do not:
 
 * front-load all complexity
 * jump between unrelated ideas
-* overuse abstract language without grounding
+* overuse abstraction without grounding
 * introduce ideas late without development
 * force resolution where uncertainty is appropriate
 
 ---
 
-## 6. Relationship to Template
+## 8. Relationship to Template
 
 The template defines:
 
 * formatting
-* sections
+* layout
 * placement of visuals
 
 This specification defines:
@@ -242,7 +284,7 @@ This structure should remain stable.
 
 ---
 
-## 7. Guiding Constraint
+## 9. Guiding Constraint
 
 If the reader cannot answer:
 

@@ -37,18 +37,41 @@ Do NOT include visuals for:
 
 ---
 
-## 3. Visual Count Constraints
+## 3. Visual Count Guidelines
 
-Per article:
+Typical structure per article:
 
-* 1 header image (optional but recommended)
+* 1 header image (recommended)
 * 2–3 supporting figures
 
-More than 3 figures requires strong justification.
+Additional figures (up to ~4) are allowed when:
+
+* each visual introduces a **new structural layer**
+* removing it would reduce clarity
+
+There is no fixed maximum.
+
+> Every visual must earn its place.
 
 ---
 
-## 4. Visual Placement
+## 4. Visual Roles
+
+### Header Image
+
+* sets conceptual tone
+* introduces the idea
+* slightly more abstract
+
+### Figures (figure1, figure2, etc.)
+
+* clarify specific concepts
+* appear after explanation
+* are more structurally grounded
+
+---
+
+## 5. Visual Placement
 
 Visuals should appear:
 
@@ -63,7 +86,7 @@ Avoid:
 
 ---
 
-## 5. Visual Philosophy
+## 6. Visual Philosophy
 
 All visuals must be:
 
@@ -87,7 +110,7 @@ Preferred style:
 
 ---
 
-## 6. Naming Convention
+## 7. Naming Convention
 
 Use canonical filenames:
 
@@ -96,6 +119,7 @@ header.png
 figure1.png
 figure2.png
 figure3.png
+figure4.png
 ```
 
 All stored in:
@@ -104,62 +128,47 @@ All stored in:
 articles/YYYY-MM-slug/assets/
 ```
 
-No custom naming. No variations.
-
 ---
 
-## 7. Alt Text Requirement
+## 8. Alt Text vs Caption (Critical Distinction)
 
-Every image must include alt text.
+### Alt Text
 
-Alt text should:
-
-* describe what is visible
-* remain objective
-* avoid interpretation
+* describes what is visually present
+* objective
+* no interpretation
 
 Example:
 
 ```plaintext
-Alt text: Diagram showing feedback loop between stress and cognitive load
+Diagram showing feedback loop between stress and cognitive load
 ```
 
 ---
 
-## 8. Caption Requirement
+### Caption
 
-Every image must include a caption.
-
-Captions must:
-
-* explain why the image matters
-* connect directly to the concept
-* clarify relationships
+* explains what the visual means
+* connects it to the article
+* clarifies relationships
 
 Structure:
 
 ```plaintext
-*[Conceptual explanation of the visual]*
+*Conceptual explanation of the visual. This image was generated using AI.*
 ```
 
 ---
 
 ## 9. AI Image Disclosure (Required)
 
-All AI-generated images must include a disclosure in the caption.
-
-Required line:
+All AI-generated images must include:
 
 ```plaintext
-This image was generated using AI as a conceptual illustration.
+This image was generated using AI.
 ```
 
-This is mandatory for:
-
-* Medium compliance
-* distribution eligibility
-
-Failure to include this may reduce distribution.
+This must appear in **every caption**, including the header.
 
 ---
 
@@ -173,8 +182,8 @@ A visual must:
 
 It must reinforce:
 
-* an existing structural pillar
-* a relationship already introduced
+* an existing idea
+* a structural relationship already introduced
 
 ---
 
@@ -192,30 +201,7 @@ If a visual requires explanation to understand:
 
 ---
 
-## 12. Medium Alignment
-
-Medium values:
-
-* clarity
-* accessibility
-* reader experience
-
-Visuals that improve readability:
-
-* increase engagement
-* support distribution
-
-Visuals that feel:
-
-* decorative
-* excessive
-* or irrelevant
-
-may reduce perceived quality.
-
----
-
-## 13. Anti-Patterns
+## 12. Anti-Patterns
 
 Do NOT:
 
@@ -232,21 +218,21 @@ Avoid:
 
 ---
 
-## 14. Relationship to Template
+## 13. Relationship to Template
 
 The template defines:
 
 * where visuals appear
-* how they are formatted
+* formatting patterns
 
 This specification defines:
 
-* when and why they exist
-* how they should behave
+* when they should exist
+* how they behave
 
 ---
 
-## 15. Guiding Constraint
+## 14. Guiding Constraint
 
 If removing a visual:
 

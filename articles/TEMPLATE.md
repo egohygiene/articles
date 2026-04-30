@@ -1,56 +1,46 @@
-# [Title]
+# 🌈 [Title]
 
 <!-- 
-Clear, specific title.
-
-Optional:
-- Emoji prefix allowed if it adds signal (not decoration)
-- Avoid clickbait or vagueness
+- Emoji prefix is recommended if it reinforces the concept
+- Keep it to ONE emoji
+- Title should be clear, not clever
 -->
 
 ![header](assets/header.png)
 
-*One compressed sentence that captures the essence of the article.*
-
----
-
 <!-- 
-OPTIONAL: AI DISCLOSURE (TOP)
-
-Include ONLY if AI-assisted writing was used beyond minor editing.
-
-Keep it minimal and matter-of-fact.
+ALT TEXT (Medium):
+Describe what is visually present in the image (objective, no interpretation)
 -->
 
-<!-- Example:
-*This article was written with the assistance of AI tools for structuring and refinement. All ideas originate from the author.*
--->
+*One compressed sentence capturing the core idea of the article. This image was generated using AI.*
 
 ---
 
 ## Table of Contents
 
 <!-- 
-Optional but recommended for longer articles.
+Mirror section headers exactly.
+Do NOT use links.
+Do NOT rename sections.
 
-Manually maintain or generate via Medium extension.
+Example:
+- Introduction  
+- Section Name  
+- Closing Reflection  
 -->
 
-- [\[Title\]](#title)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [\[Section Title 1\]](#section-title-1)
-  - [\[Section Title 2\]](#section-title-2)
-  - [\[Section Title 3\]](#section-title-3)
-  - [Closing Reflection](#closing-reflection)
-  - [References](#references)
+* Introduction
+* [Section Name]
+* [Section Name]
+* Closing Reflection
 
 ---
 
 ## Introduction
 
 <!-- 
-Entry Mode: Choose ONE
+Entry Mode:
 
 Option A — Personal:
 - lived experience
@@ -62,72 +52,74 @@ Option B — Conceptual:
 Goal:
 - establish relevance
 - create curiosity
-- define implicit question
 -->
 
-[Opening that grounds the reader in the problem or observation.]
+[Opening content]
 
 ---
 
-## [Section Title 1]
+## [Section Name]
 
 <!-- 
 Each section should:
-
-- introduce ONE core idea
-- build on previous sections
-- move from intuition → explanation → implication
+- introduce one core idea
+- build progressively
+- avoid unnecessary branching
 -->
 
-[Concept explanation.]
+[Content]
 
 ---
 
 ![figure1](assets/figure1.png)
 
-<!-- Alt text: Describe what the image shows -->
+<!-- 
+ALT TEXT (Medium):
+Describe what is visually present (objective, no interpretation)
+-->
 
-*Caption: Explain the relationship the visual is clarifying.
-This image was generated using AI as a conceptual illustration.*
+*Explain what the visual clarifies. This image was generated using AI.*
 
 ---
 
-## [Section Title 2]
+## [Section Name 2]
 
-[Deeper expansion of the idea.]
+[Content]
 
 ---
 
 ![figure2](assets/figure2.png)
 
-<!-- Alt text: Describe what the image shows -->
+<!-- 
+ALT TEXT (Medium):
+Describe what is visually present
+-->
 
-*Caption: Clarify the structure or comparison being illustrated.
-This image was generated using AI as a conceptual illustration.*
+*Clarify the relationship or comparison shown. This image was generated using AI.*
 
 ---
 
-## [Section Title 3]
+## [Section Name 3]
 
 <!-- 
-This section often introduces a shift:
-
+This section often introduces:
 - reframe
-- alternative perspective
 - deeper layer
+- shift in perspective
 -->
 
-[Conceptual pivot or expansion.]
+[Content]
 
 ---
 
 ![figure3](assets/figure3.png)
 
-<!-- Alt text: Describe what the image shows -->
+<!-- 
+ALT TEXT (Medium):
+Describe what is visually present
+-->
 
-*Caption: Optional third visual if needed.
-Only include if it reduces cognitive load.
-This image was generated using AI as a conceptual illustration.*
+*Optional third visual. Only include if it reduces cognitive load. This image was generated using AI.*
 
 ---
 
@@ -138,37 +130,29 @@ Do NOT summarize.
 
 Instead:
 - compress the idea
-- leave the reader with a perspective shift
-- maintain calm tone
+- leave a lasting insight
+- stay calm and grounded
 -->
 
-[Final reflection that extends the idea beyond the article.]
+[Final insight]
 
 ---
 
 ## References
 
 <!-- 
-Requirements:
-
-- 3–6 credible sources
-- Prefer peer-reviewed or foundational work
-- Include DOI when available
+3–6 credible sources
+Include:
+- Author
+- Year
+- Title
+- Source
+- DOI (preferred)
 -->
 
-- [Author, Year — Title — Source]
-- [Author, Year — Title — Source]
+* [Reference]
+* [Reference]
 
 ---
 
-<!-- 
-AI DISCLOSURE (FOOTER — RECOMMENDED)
-
-This is the primary disclosure location.
--->
-
----
-
-*This article was written by the author, with AI used as a tool for structuring, refinement, and visual generation. All ideas originate from the author's own thinking.*
-
----
+*This article was written by Alan Szmyt, with AI used as a tool for structuring, refinement, and visual generation. All ideas originate from the author's own thinking.*

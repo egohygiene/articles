@@ -1,18 +1,18 @@
 # Medium Compliance — Specification
 
-This document defines the rules required for publishing on Medium while maintaining:
+This document defines the constraints required to:
 
-* eligibility for the Partner Program
-* eligibility for General / Boost distribution
-* alignment with Medium’s AI and content policies
+* remain eligible for the Medium Partner Program
+* maintain General / Boost distribution
+* comply with AI and content policies
 
-These are **non-negotiable constraints**, not suggestions.
+These are **non-negotiable rules**, not guidelines.
 
 ---
 
 ## 1. Core Principle
 
-Medium is for **human-created, original writing**.
+Medium prioritizes **human-authored, original work**.
 
 AI may assist, but:
 
@@ -20,10 +20,10 @@ AI may assist, but:
 * it must not replace original thinking
 * it must not generate the majority of the content
 
-Violation of this principle can result in:
+Violation can result in:
 
 * removal from paywall eligibility
-* reduced distribution (Network only)
+* reduced distribution (Network-only)
 * account restrictions
 
 ---
@@ -32,65 +32,58 @@ Violation of this principle can result in:
 
 ### Allowed
 
-* AI-assisted structuring
-* AI-assisted refinement (clarity, grammar, flow)
-* AI-assisted outlining
+* structuring
+* refinement (clarity, grammar, flow)
+* outlining
 
 ### Not Allowed
 
 * majority AI-generated articles
-* lightly edited AI-generated drafts
-* content that lacks original human perspective
+* lightly edited AI drafts
+* content without original human perspective
 
 ---
 
 ## 3. AI Disclosure Requirements
 
-### Text
+### Article-Level (Required)
 
-If AI-assisted writing is used beyond minor editing:
+Include at the bottom of every article:
 
-* include a disclosure in the article
+```plaintext id="cmk8gd"
+*This article was written by Alan Szmyt, with AI used as a tool for structuring, refinement, and visual generation. All ideas originate from the author's own thinking.*
+```
 
-Acceptable formats:
+---
 
-Top (optional, subtle):
+### Optional Top Disclosure
 
-```plaintext
+Only include if AI usage is significant:
+
+```plaintext id="xqg6vl"
 *This article was written with the assistance of AI tools for structuring and refinement.*
 ```
-
-Footer (required standard):
-
-```plaintext
-*This article was written by the author, with AI used as a tool for structuring, refinement, and visual generation. All ideas originate from the author's own thinking.*
-```
-
-Failure to disclose:
-
-* results in reduced distribution
 
 ---
 
 ## 4. AI Image Rules
 
-All AI-generated images must:
+Every AI-generated image must include a caption line:
 
-* be clearly labeled in the caption
-* not misrepresent real people or events
-* comply with all Medium content rules
-
-Required caption addition:
-
-```plaintext
-This image was generated using AI as a conceptual illustration.
+```plaintext id="9ykhpf"
+This image was generated using AI.
 ```
+
+Requirements:
+
+* must appear in every caption (including header)
+* must be integrated naturally (not separated or emphasized)
 
 Images must:
 
-* support the article conceptually
-* not exist as decoration
-* not be misleading
+* support the concept
+* not mislead
+* not imply real-world accuracy when conceptual
 
 ---
 
@@ -99,57 +92,62 @@ Images must:
 Articles must be:
 
 * non-derivative
-* not summaries or rephrasings of existing content
-* not structurally copied from other sources
+* not summaries or rephrasings
+* not structurally copied
 
-Not allowed:
+Do NOT:
 
-* paraphrasing existing articles
-* AI remixing of existing content
-* SEO-driven low-value writing
+* paraphrase existing articles
+* generate content via AI and lightly edit
+* produce SEO-driven filler
 
 ---
 
 ## 6. Distribution Risk Factors
 
-The following reduce or eliminate distribution:
+The following reduce distribution:
 
-### 6.1 Low-Value Content
+### Low-Value Content
 
 * generic advice
-* obvious observations without insight
-* filler or redundant writing
+* obvious observations
+* filler or redundancy
 
-### 6.2 Templated Feel
+---
 
-* identical structure across articles without variation
+### Templated Feel
+
+* identical structure across articles
 * predictable phrasing patterns
 * formulaic writing
 
-### 6.3 Clickbait
+---
+
+### Clickbait
 
 * misleading titles
-* vague or sensational framing
+* vague or exaggerated framing
 
-### 6.4 AI Signals
+---
+
+### AI Signals
 
 * overly polished but empty writing
-* lack of personal or original insight
-* unnatural repetition
+* lack of original perspective
+* repetitive phrasing
 
 ---
 
 ## 7. Boost Alignment Signals
 
-Articles more likely to receive distribution:
+Articles are more likely to be distributed when they:
 
-* clear reason why this author is writing this
-* grounded insight or lived experience
-* original perspective
-* strong conceptual clarity
-* respect for reader’s time
+* present a clear, original idea
+* show why the author is writing this
+* demonstrate grounded thinking
+* respect the reader’s time
 
-The article must feel:
+The article should feel:
 
 * intentional
 * thoughtful
@@ -161,88 +159,70 @@ The article must feel:
 
 All articles must:
 
-* be clearly written
-* avoid grammatical errors
+* be clear and readable
 * maintain consistent tone
 * avoid excessive abstraction without grounding
 
 Formatting must:
 
-* use headings properly
-* include spacing for readability
+* use headers correctly
+* include spacing
 * integrate visuals cleanly
 
 ---
 
-## 9. Image Quality Requirements
+## 9. Image Requirements
 
 Images must:
 
-* add value
-* not distract
-* be properly captioned
-* include alt text
+* add conceptual value
+* include captions
+* include alt text (applied in Medium editor)
 
 Avoid:
 
 * irrelevant visuals
-* excessive imagery
-* decorative graphics
+* decorative imagery
+* excessive usage
 
 ---
 
-## 10. Prohibited Content (High-Level)
-
-Do not include:
-
-* hate speech
-* harassment
-* misinformation
-* plagiarized content
-* unsafe or deceptive content
-
-All content must comply with Medium Rules.
-
----
-
-## 11. Canonical Integrity
+## 10. Canonical Integrity
 
 The repository version is the source of truth.
 
 Rules:
 
 * Medium article must match `published.md`
-* any corrections must be applied to both
-* canonical link must point to the website version
-
-Divergence is considered a system failure.
+* updates must be applied to both
+* canonical link must point to the site version
 
 ---
 
-## 12. Final Pre-Publish Checklist
+## 11. Final Pre-Publish Checklist
 
 Before publishing:
 
 * [ ] Article is primarily human-written
-* [ ] AI disclosure included (if applicable)
-* [ ] All AI images labeled in captions
-* [ ] No derivative or copied content
-* [ ] Title accurately reflects content
-* [ ] Structure is clear and readable
-* [ ] Visuals add real value
-* [ ] References are credible and accurate
+* [ ] Footer AI disclosure included
+* [ ] All images include AI caption line
+* [ ] No derivative content
+* [ ] Title is clear and accurate
+* [ ] Structure is clean and readable
+* [ ] Visuals add value
+* [ ] References are credible
 
 ---
 
-## 13. Guiding Constraint
+## 12. Guiding Constraint
 
-If a story feels:
+If the article feels:
 
 * generic
 * automated
-* or written for output instead of insight
+* written for output instead of insight
 
-It should not be published.
+Do not publish it.
 
 Medium rewards:
 
