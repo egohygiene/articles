@@ -4,7 +4,7 @@ REQUIRED_FOOTER_DISCLOSURE = (
     "the author's own thinking."
 )
 
-REQUIRED_IMAGE_DISCLOSURE = "This image was generated using AI."
+REQUIRED_IMAGE_DISCLOSURE = "This image was generated using AI"
 
 DEFAULT_OLLAMA_URL = "http://localhost:11434/api/generate"
 DEFAULT_OLLAMA_MODEL = "llama3.2"

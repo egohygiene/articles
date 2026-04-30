@@ -3,42 +3,68 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
+import structlog
+
 from mindlint.config.defaults import REQUIRED_FOOTER_DISCLOSURE, REQUIRED_IMAGE_DISCLOSURE
 from mindlint.models.article import Article, ImageReference, Section
 
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 IMAGE_RE = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
 MEDIUM_ALT_RE = re.compile(r"<!--\s*ALT TEXT \(Medium\):.*?-->", re.IGNORECASE)
+MEDIUM_ALT_LABEL_RE = re.compile(r"ALT TEXT \(Medium\):", re.IGNORECASE)
+log = structlog.get_logger(__name__)
 
 
 def parse_article(article_dir: Path) -> Article:
     published_path = article_dir / "published.md"
+    log.debug("parse_article.start", article_dir=str(article_dir), path=str(published_path))
 
     if not published_path.exists():
+        log.debug("parse_article.missing_file", path=str(published_path))
         raise FileNotFoundError(f"{published_path} not found")
 
     text = published_path.read_text(encoding="utf-8")
     lines = text.splitlines()
     sections = _extract_sections(lines)
+    title = _extract_title(lines)
+    images = _extract_images(lines)
+    has_table_of_contents = _has_section(sections, "Table of Contents")
+    has_references = _has_section(sections, "References")
+    has_footer_ai_disclosure = _has_footer_disclosure(text)
+
+    log.debug(
+        "parse_article.complete",
+        article_dir=str(article_dir),
+        title=title,
+        line_count=len(lines),
+        section_count=len(sections),
+        image_count=len(images),
+        has_table_of_contents=has_table_of_contents,
+        has_references=has_references,
+        has_footer_ai_disclosure=has_footer_ai_disclosure,
+    )
 
     return Article(
         path=article_dir,
         published_path=published_path,
-        title=_extract_title(lines),
+        title=title,
         raw_text=text,
         sections=sections,
-        images=_extract_images(lines),
-        has_table_of_contents=_has_section(sections, "Table of Contents"),
-        has_references=_has_section(sections, "References"),
-        has_footer_ai_disclosure=_has_footer_disclosure(text),
+        images=images,
+        has_table_of_contents=has_table_of_contents,
+        has_references=has_references,
+        has_footer_ai_disclosure=has_footer_ai_disclosure,
     )
 
 
 def _extract_title(lines: list[str]) -> str:
-    for line in lines:
+    for index, line in enumerate(lines):
         match = HEADING_RE.match(line)
         if match and len(match.group(1)) == 1:
-            return match.group(2).strip()
+            title = match.group(2).strip()
+            log.debug("parser.title_found", line_number=index + 1, title=title)
+            return title
+    log.debug("parser.title_missing")
     return ""
 
 
@@ -51,7 +77,14 @@ def _extract_sections(lines: list[str]) -> list[Section]:
 
         level = len(match.group(1))
         if level in {2, 3}:
-            heading_indexes.append((index, level, match.group(2).strip()))
+            title = match.group(2).strip()
+            heading_indexes.append((index, level, title))
+            log.debug(
+                "parser.section_heading_found",
+                line_number=index + 1,
+                level=level,
+                title=title,
+            )
 
     sections: list[Section] = []
     for position, (line_index, level, title) in enumerate(heading_indexes):
@@ -70,6 +103,7 @@ def _extract_sections(lines: list[str]) -> list[Section]:
             )
         )
 
+    log.debug("parser.sections_extracted", count=len(sections))
     return sections
 
 
@@ -78,31 +112,107 @@ def _extract_images(lines: list[str]) -> list[ImageReference]:
     for index, line in enumerate(lines):
         for match in IMAGE_RE.finditer(line):
             caption = _find_caption(lines, index)
-            images.append(
-                ImageReference(
-                    alt_text=match.group(1).strip(),
-                    path=match.group(2).strip(),
-                    caption=caption,
-                    has_medium_alt_comment=_has_nearby_alt_comment(lines, index),
-                    has_ai_caption_disclosure=(
-                        caption is not None and REQUIRED_IMAGE_DISCLOSURE in caption
-                    ),
-                    line_number=index + 1,
-                )
+            has_medium_alt_comment = _has_nearby_alt_comment(lines, index)
+            has_ai_caption_disclosure = _has_ai_disclosure(caption)
+            image = ImageReference(
+                alt_text=match.group(1).strip(),
+                path=match.group(2).strip(),
+                caption=caption,
+                has_medium_alt_comment=has_medium_alt_comment,
+                has_ai_caption_disclosure=has_ai_caption_disclosure,
+                line_number=index + 1,
             )
+            log.debug(
+                "parser.image_found",
+                line_number=image.line_number,
+                alt_text=image.alt_text,
+                path=image.path,
+                caption=image.caption,
+                has_medium_alt_comment=image.has_medium_alt_comment,
+                has_ai_caption_disclosure=image.has_ai_caption_disclosure,
+            )
+            images.append(
+                image
+            )
+    log.debug("parser.images_extracted", count=len(images))
     return images
 
 
 def _find_caption(lines: list[str], image_line_index: int) -> str | None:
-    for index in range(image_line_index + 1, min(image_line_index + 4, len(lines))):
+    in_comment = False
+    caption_lines: list[str] = []
+
+    for index in range(image_line_index + 1, min(image_line_index + 12, len(lines))):
         candidate = lines[index].strip()
+        log.debug(
+            "parser.caption_candidate",
+            image_line_number=image_line_index + 1,
+            candidate_line_number=index + 1,
+            candidate=candidate,
+            in_comment=in_comment,
+        )
+
         if not candidate:
+            if caption_lines:
+                break
             continue
-        if candidate.startswith("<!--"):
+
+        # Handle multi-line comments
+        if "<!--" in candidate:
+            if "-->" not in candidate:
+                in_comment = True
+            log.debug(
+                "parser.caption_skip_comment_start",
+                image_line_number=image_line_index + 1,
+                candidate_line_number=index + 1,
+            )
             continue
-        if candidate.startswith("#") or IMAGE_RE.search(candidate):
+
+        if "-->" in candidate:
+            in_comment = False
+            log.debug(
+                "parser.caption_skip_comment_end",
+                image_line_number=image_line_index + 1,
+                candidate_line_number=index + 1,
+            )
+            continue
+
+        if in_comment:
+            log.debug(
+                "parser.caption_skip_inside_comment",
+                image_line_number=image_line_index + 1,
+                candidate_line_number=index + 1,
+            )
+            continue
+
+        # Skip headings and images
+        if candidate.startswith("#") or IMAGE_RE.search(candidate) or candidate == "---":
+            log.debug(
+                "parser.caption_stopped_before_structure",
+                image_line_number=image_line_index + 1,
+                candidate_line_number=index + 1,
+                candidate=candidate,
+            )
             return None
-        return _strip_caption_markup(candidate)
+
+        caption_lines.append(candidate)
+        log.debug(
+            "parser.caption_line_collected",
+            image_line_number=image_line_index + 1,
+            candidate_line_number=index + 1,
+            candidate=candidate,
+        )
+
+    if caption_lines:
+        caption = _strip_caption_markup("\n".join(caption_lines))
+        log.debug(
+            "parser.caption_found",
+            image_line_number=image_line_index + 1,
+            caption=caption,
+        )
+        return caption
+
+    log.debug("parser.caption_missing", image_line_number=image_line_index + 1)
     return None
 
 
@@ -117,8 +227,20 @@ def _strip_caption_markup(text: str) -> str:
 
 def _has_nearby_alt_comment(lines: list[str], image_line_index: int) -> bool:
     start = max(0, image_line_index - 3)
-    end = min(len(lines), image_line_index + 4)
-    return any(MEDIUM_ALT_RE.search(line) for line in lines[start:end])
+    end = min(len(lines), image_line_index + 10)
+    window = "\n".join(lines[start:end])
+    has_alt_comment = bool(
+        MEDIUM_ALT_RE.search(window)
+        or ("<!--" in window and "-->" in window and MEDIUM_ALT_LABEL_RE.search(window))
+    )
+    log.debug(
+        "parser.alt_comment_checked",
+        image_line_number=image_line_index + 1,
+        window_start_line=start + 1,
+        window_end_line=end,
+        has_alt_comment=has_alt_comment,
+    )
+    return has_alt_comment
 
 
 def _has_section(sections: list[Section], expected_title: str) -> bool:
@@ -127,4 +249,24 @@ def _has_section(sections: list[Section], expected_title: str) -> bool:
 
 def _has_footer_disclosure(text: str) -> bool:
     footer_region = text.strip()[-1000:]
-    return REQUIRED_FOOTER_DISCLOSURE in footer_region
+    has_footer_disclosure = REQUIRED_FOOTER_DISCLOSURE in footer_region
+    log.debug("parser.footer_disclosure_checked", found=has_footer_disclosure)
+    return has_footer_disclosure
+
+
+def _has_ai_disclosure(caption: str | None) -> bool:
+    if not caption:
+        log.debug("parser.ai_image_disclosure_checked", found=False, reason="no_caption")
+        return False
+
+    normalized = caption.lower()
+    image_disclosure = REQUIRED_IMAGE_DISCLOSURE.lower()
+    has_ai_disclosure = image_disclosure in normalized
+    log.debug(
+        "parser.ai_image_disclosure_checked",
+        caption=caption,
+        normalized_caption=normalized,
+        required=image_disclosure,
+        found=has_ai_disclosure,
+    )
+    return has_ai_disclosure
