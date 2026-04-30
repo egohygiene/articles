@@ -2,7 +2,12 @@
 
 ![header](assets/header.png)
 
-*Uncertainty does not have to feel like a threat. It can become space.*
+<!-- 
+ALT TEXT (Medium):
+Person standing in an open landscape beneath a sky with a large question mark formed in clouds
+-->
+
+*Conceptual representation of uncertainty as an open space rather than a threat. This image was generated using AI.*
 
 ---
 
@@ -24,17 +29,19 @@ And when we cannot know, something in us tightens.
 
 Ambiguity is uncomfortable.
 
-When a question remains unresolved, the mind does not simply let it float. It searches. It reaches. It wants closure.
+When a question remains unresolved, the mind does not simply let it float. It searches. It reaches. It wants closure. It needs resolution.
 
 Psychologists describe this as a *need for cognitive closure* — the motivational pull to arrive at an answer and lock it in. When uncertainty lingers, we tend to “seize” the first plausible explanation and then “freeze” around it.
 
-This is not a flaw in character. It is a feature of cognition.
+This is not a flaw in character.
+
+It is a feature of cognition.
 
 Unresolved uncertainty consumes energy. It keeps prediction systems active. It maintains vigilance.
 
 The problem is not that we seek answers.
 
-The problem is when we treat premature answers as relief.
+> The problem is when we treat premature answers as relief.
 
 ---
 
@@ -48,19 +55,28 @@ That discrepancy feels like tension.
 
 Research in anxiety shows that intolerance of uncertainty is one of the strongest drivers of persistent worry. The unknown activates threat systems. Multiple possible interpretations compete for attention.
 
-Some researchers describe this as **psychological entropy** — a state where too many possible outcomes remain unresolved. The mind interprets this entropy as destabilizing.
+Some researchers describe this as **psychological entropy** — a state where too many possible outcomes remain unresolved.
+
+The mind interprets this entropy as destabilizing.
 
 Rumination often follows. We loop through possibilities, replay scenarios, and attempt to simulate our way into certainty.
 
 But simulation is not resolution.
 
-And prolonged rumination does not create clarity. It amplifies strain.
+And prolonged rumination does not create clarity.
+
+> It amplifies strain.
 
 ---
 
 ![figure1](assets/figure1.png)
 
-*Rumination traps energy in closed loops. Provisional thinking creates forward movement.*
+<!-- 
+ALT TEXT (Medium):
+Tangled looping lines representing rumination contrasted with a clear forward-moving path
+-->
+
+*Rumination traps energy in closed loops. Provisional thinking creates forward movement. This image was generated using AI.*
 
 ---
 
@@ -76,17 +92,17 @@ Provisionality.
 
 The simple recognition:
 
-“I do not know this fully — and that is acceptable.”
+> “I do not know this fully — and that is acceptable.”
 
 When the demand for ultimate answers loosens, something subtle shifts in the nervous system.
 
 The loop slows.
-
 Energy reallocates.
-
 Attention stabilizes.
 
-This is not mystical surrender. It is cognitive regulation.
+This is not mystical surrender.
+
+It is cognitive regulation.
 
 Relief comes not from answers themselves, but from releasing the insistence on having them immediately.
 
@@ -94,7 +110,12 @@ Relief comes not from answers themselves, but from releasing the insistence on h
 
 ![figure2](assets/figure2.png)
 
-*High cognitive entropy feels like threat. Uncertainty tolerance transforms strain into openness.*
+<!-- 
+ALT TEXT (Medium):
+Transition from chaotic storm-like scene to calm open landscape representing reduced cognitive strain
+-->
+
+*High cognitive entropy feels like threat. Uncertainty tolerance transforms strain into openness. This image was generated using AI.*
 
 ---
 
@@ -112,22 +133,24 @@ Not knowing, when held correctly, is not paralysis.
 
 It is space.
 
-Space to explore.  
-Space to update.  
+Space to explore.
+Space to update.
 Space to choose deliberately rather than reactively.
 
 ---
 
 ## Practicing Not Knowing
 
-Freedom from forced certainty does not happen automatically. It can be practiced.
+Freedom from forced certainty does not happen automatically.
+
+It can be practiced.
 
 A simple sequence helps:
 
-- Notice the trigger.
-- Pause before closure.
-- Reframe the thought as provisional.
-- Continue acting without demanding finality.
+* notice the trigger
+* pause before closure
+* reframe the thought as provisional
+* continue acting without demanding finality
 
 This does not mean abandoning responsibility.
 
@@ -139,7 +162,12 @@ It means increasing tolerance for cognitive entropy without collapsing into it.
 
 ![figure3](assets/figure3.png)
 
-*Practicing not knowing is an intervention: pause, hold provisionality, then continue with steadiness.*
+<!-- 
+ALT TEXT (Medium):
+Step-by-step process diagram showing trigger, pause, reframe, and continue
+-->
+
+*Practicing not knowing is an intervention: pause, hold provisionality, then continue with steadiness. This image was generated using AI.*
 
 ---
 
@@ -156,11 +184,12 @@ But you do not need to.
 When the demand for absolute knowing softens, something steadier takes its place.
 
 Clarity without rigidity.
-
 Curiosity without panic.
-
 Freedom without denial.
 
-Not knowing is not a failure of intelligence.
+> not knowing is not a failure of intelligence.
+> sometimes, it is its maturation.
 
-Sometimes, it is its maturation.
+---
+
+*This article was written by Alan Szmyt, with AI used as a tool for structuring, refinement, and visual generation. All ideas originate from the author's own thinking.*
